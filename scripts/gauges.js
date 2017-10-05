@@ -1956,7 +1956,7 @@ function () {
                         // TODO: Finish!
                         require.config({
                             paths: {
-                                d3: "http://d3js.org/d3.v3.min",
+                                d3: "./scripts/wind_gauge_new/d3.v3.min",
                                 windGauge: "./wind_gauge_new/wind_gauge"
                             }
                         });
