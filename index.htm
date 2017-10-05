@@ -1,0 +1,479 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <!-- favico-->
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/favico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/favico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/favico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/favico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/favico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/favico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/favico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/favico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/favico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/favico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favico/favicon-16x16.png">
+    <link rel="manifest" href="/images/favico/manifest.json">
+    <link rel="stylesheet" type="text/css" href="css/windrose.css">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/images/favico/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--END favico-->
+
+    <meta charset="UTF-8">
+    <script src="wz_jsgraphics.js" type="text/javascript"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="scripts/steelseries_tween.min.js"></script>
+    <script src="scripts/language.min.js"></script>
+    <script src="scripts/gauges.js"></script>
+    <script src="scripts/windrose.js"></script>
+    <script src="scripts/RGraph.common.core.min.js"></script>
+    <script src="scripts/RGraph.rose.min.js"></script>
+    <script type="text/javascript" src="/clappr/dist/clappr.min.js"></script>
+    <script type="text/javascript">
+        function changeImage(im) {
+            document.images["graphs"].src = im + "?" + new Date().getTime();
+        }
+    </script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-83919211-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    <script src="scripts/wind_gauge_new/require.js"></script>
+    <title>Pogoda Live </title>
+
+    <link href="weatherstyle.css" rel="stylesheet" type="text/css"/>
+
+    <meta name="description" content=""/>
+    <meta name="keywords"
+          content="Cumulus,  Pogoda na zywo, live, podglad, kamera, kamerka, stacja pogodowa, warunki pogodowe Kadyny, kamera online"/>
+    <meta http-equiv="Refresh" content="600"/>
+
+</head>
+
+<body>
+
+
+<div id="content">
+
+
+    <center><a href="http://www.wiatrkadyny.pl"><img src="/images/logo.png" alt="BRAK LOGO" width="500"
+                                                     height="160"/></a></center>
+
+    <br><br>
+
+    <!-- NAV -->
+    <center>
+        <div class="menu_top">
+
+
+            <ul id="nav">
+                <li><a class="button button--wayra button--border-thick button--text-upper button--size-s"
+                       href="index.htm">Aktualnie</a></li>
+                <li><a class="button button--wayra button--border-thick button--text-upper button--size-s"
+                       href="wykresy.htm">Wykresy</a></li>
+                <li><a class="button button--wayra button--border-thick button--text-upper button--size-s" href="">Rekordy</a>
+                    <ul>
+                        <li><a class="button button--wayra button--border-thick button--text-upper button--size-s"
+                               href="today.htm">Dzisiaj</a></li>
+                        <li><a class="button button--wayra button--border-thick button--text-upper button--size-s"
+                               href="yesterday.htm">Wczoraj</a></li>
+                        <li><a class="button button--wayra button--border-thick button--text-upper button--size-s"
+                               href="thismonth.htm">Obecny&nbsp;miesi&#261;c</a></li>
+                        <li><a class="button button--wayra button--border-thick button--text-upper button--size-s"
+                               href="thisyear.htm">Obecny&nbsp;rok</a></li>
+                        <li><a class="button button--wayra button--border-thick button--text-upper button--size-s"
+                               href="monthlyrecord.htm">Miesi&#281;czne&nbsp;rekordy</a></li>
+                        <li><a class="button button--wayra button--border-thick button--text-upper button--size-s"
+                               href="record.htm">Rekordy stacji</a></li>
+                    </ul>
+                </li>
+
+                <li><a class="button button--wayra button--border-thick button--text-upper button--size-s"
+                       href="aplikacja.htm">Aplikacja</a></li>
+                <li><a class="button button--wayra button--border-thick button--text-upper button--size-s"
+                       href="prognozy.htm">Prognozy</a></li>
+                <li><a class="button button--wayra button--border-thick button--text-upper button--size-s"
+                       href="kalkulator.htm">Kalkulator wiatru</a></li>
+            </ul>
+        </div>
+    </center>
+    <!-- #NAV -->
+
+    <!-- grauge code -->
+    <br><br><br><br><br><br>
+
+    <span class="warunkiText">Warunki pogodowe z 15:40 on 04 październik 2017</span>
+
+    <center>
+        <div id="player"></div>
+        <script>
+
+            var player = new Clappr.Player({
+                source: "http://stream.elblag.net:18080/kadyny_bicz/index.m3u8",
+                width: "490",
+                height: "276",
+                parentId: "#player",
+                poster: "/images/poster.png",
+                watermark: "/images/favico/apple-icon-60x60.png", position: "top-right",
+                watermarkLink: "http://www.wiatrkadyny.pl",
+                hideVolumeBar: "true",
+                mute: "true",
+                preload: "auto",
+                loop: "true",
+                maxBufferLength: "600",
+                disableVideoTagContextMenu: "true",
+            });
+
+        </script>
+
+        <br><br>
+    </center>
+    <!-- wiatr tabelka -->
+
+    <table style="width:100%;border-collapse: collapse; border-spacing: 0;">
+        <tr>
+            <td colspan="4" class="tableseparator_wind">Wiatr</td>
+        </tr>
+        <tr class="td_wind_data">
+            <td>Predko&#347;&#263;&nbsp;Wiatru&nbsp;(szkwa&#321; 10min)</td>
+            <td>9,3&nbsp;kts</td>
+            <td>Predko&#347;&#263;&nbsp;wiatru&nbsp;(&#346;rednia 10min)</td>
+            <td>3,7&nbsp;kts</td>
+        </tr>
+        <tr class="td_wind_data">
+            <td>Kierunek wiatru</td>
+            <td>176&deg; S</td>
+            <td>Beaufort&nbsp;F2</td>
+            <td>Słaby wiatr</td>
+        </tr>
+    </table>
+    <!-- wiatr tabelka -->
+
+
+    <!-- grauge code -->
+
+
+    <div id="strona">
+
+
+        <div id="pasekStanu">
+            <div id="mask" style="height:35px;"></div>
+            <Center>
+                <canvas id="canvas_timer" width="70" height="25"></canvas>
+            </center>
+            <br>
+        </div> <!-- pasek statusu end-->
+
+
+        <!-- W I A T R -->
+
+
+        <table style="width:100%>
+<tr class=" wskazniki
+        ">
+        <td>
+            <center>
+                <div id="tip_7">
+                    <canvas id="canvas_dir" class="gaugeSizeStd" width="237" height="237"></canvas>
+            </center>
+        </td>
+        <td>
+            <center>
+                <div id="tip_6">
+                    <canvas id="canvas_wind" class="gaugeSizestd" width="237" height="237"></canvas>
+            </center>
+        </td>
+        <td>
+            <div id="tip_10">
+                <canvas id="canvas_rose" class="gaugeSizeStd" width="237" height="237"></canvas></div>
+        </td>
+
+        <td>
+            <div id="wind-container"></div>
+        </td>
+        </tr>
+        </table>
+
+        <Center>
+            <div id="pasekDolny">
+                <input id="rad_unitsWind2" type="radio" name="rad_unitsWind" value="kts" checked
+                       onclick="gauges.setUnits(this);"><label id="lab_unitsWind2" for="rad_unitsWind2">knots</label>
+                <input id="rad_unitsWind4" type="radio" name="rad_unitsWind" value="km/h"
+                       onclick="gauges.setUnits(this);"><label id="lab_unitsWind4" for="rad_unitsWind4">km/h</label>
+                <input id="rad_unitsWind3" type="radio" name="rad_unitsWind" value="m/s"
+                       onclick="gauges.setUnits(this);"><label id="lab_unitsWind3" for="rad_unitsWind3">m/s</label>
+                <input id="rad_unitsWind1" type="radio" name="rad_unitsWind" value="mph"
+                       onclick="gauges.setUnits(this);"><label id="lab_unitsWind1" for="rad_unitsWind1">mph</label>
+
+        </center>
+        <br><br>
+    </div><!--2 rzad END-->
+
+
+    <!-- trends graphs -->
+
+    <table style="width:100%;border-collapse: collapse; border-spacing: 0;" class="imgGraphWrap">
+        <tr>
+            <td colspan="5" style="align-self:center;"><img src="images/wind.png" class="imgGraph" id="graphs"
+                                                            title="Weather Graphs" alt="Weather Graphs"/></td>
+        </tr>
+
+        <tr>
+            <td class="td_thumbnails"><a onclick='changeImage("images/temp.png")' class="graphBTN">Temperatura
+                powietrza</a></td>
+            <td class="td_thumbnails"><a onclick='changeImage("images/press.png")' class="graphBTN">Ci&#347;nienie
+                powietrza</a></td>
+            <td class="td_thumbnails"><a onclick='changeImage("images/wind.png")' class="graphBTN">Predko&#347;&#263;
+                wiatru</a></td>
+            <td class="td_thumbnails"><a onclick='changeImage("images/raint.png")' class="graphBTN">Opady deszczu</a>
+            </td>
+        </tr>
+        <tr>
+        </tr>
+    </table>
+
+    <!-- trends graphs -->
+
+    <h2 style="text-align: left; text-transform: none;" class="firstHeader">
+        &nbsp;Szeroko&#347;&#263;&nbsp;N&nbsp;54&deg;&nbsp;18&#39;&nbsp;03&quot;&nbsp;&nbsp;&nbsp;&nbsp;D&#322;ugo&#347;&#263;&nbsp;E&nbsp;19&deg;&nbsp;28&#39;&nbsp;01&quot;&nbsp;&nbsp;&nbsp;&nbsp;Wysoko&#347;&#263;&nbsp;7&nbsp;m
+    </h2>
+    <!-- Almanac -->
+    <table style="width:100%;border-collapse: collapse; border-spacing: 0;" class="firstTable">
+        <tbody>
+        <tr>
+            <td class="labels">&#346;wit:</td>
+            <td class="site_data" style="text-align: left;">06:14</td>
+            <td class="labels">Wsch&#243;d S&#322;o&#324;ca:</td>
+            <td class="site_data" style="text-align: left;">06:50</td>
+            <td class="labels">Wsch&#243;d Ksi&#281;&#380;yca:</td>
+            <td class="site_data" style="text-align: left;">18:08</td>
+            <td rowspan="3"><img src="images/moon.bmp" alt="Moon" width="64" height="64"
+                                 style="margin: 0px 10px;horizontal-align:left"/></td>
+        </tr>
+        <tr>
+            <td class="labels">Zmierzch:</td>
+            <td class="site_data" style="text-align: left;">18:46</td>
+            <td class="labels">Zach&#243;d S&#322;o&#324;ca:&nbsp;</td>
+            <td class="site_data" style="text-align: left;">18:11</td>
+            <td class="labels">Zach&#243;d Ksi&#281;&#380;yca:</td>
+            <td class="site_data" style="text-align: left;">04:34</td>
+        </tr>
+        <tr>
+            <td class="labels">&#346;wiat&#322;o dzienne:</td>
+            <td class="site_data" style="text-align: left;">12:32</td>
+            <td class="labels">D&#322;ugo&#347;&#263; Dnia:</td>
+            <td class="site_data" style="text-align: left;">11:21</td>
+            <td class="labels">Faza Ksi&#281;&#380;yca:</td>
+            <td class="site_data" style="text-align: left;">Poszerzony Księżyc&nbsp;[98%]</td>
+        </tr>
+        </tbody>
+    </table>
+    <!-- END Almanac -->
+
+    <br><br>
+    <!-- Temperatura i Cisnienie -->
+
+    <table style="width:100%;border-collapse: collapse; border-spacing: 0;">
+
+        <tr>
+            <td colspan="4" class="tableseparator_temp">Temperatura i Ci&#347;nienie</td>
+        </tr>
+        <tr class="td_temperature_data">
+            <td>Temperatura</td>
+            <td>12,9&nbsp;&deg;C</td>
+            <td>Temperatura Odczuwalna</td>
+            <td>12,6&nbsp;&deg;C</td>
+        </tr>
+        <tr class="td_pressure_data">
+            <td>Barometr</td>
+            <td>1021,1&nbsp;hPa</td>
+            <td>Powolny spadek</td>
+            <td>-0,3&nbsp;hPa/hr</td>
+        </tr>
+
+        <tr>
+            <td colspan="4" class=""></td>
+        </tr>
+    </table>
+    <br>
+
+    <table style="width:100%">
+        <tr class="wskazniki">
+            <td>
+                <center>
+                    <div id="tip_0">
+                        <canvas id="canvas_temp" class="gaugeSizeStd" width="237" height="237"></canvas>
+                </center>
+            </td>
+            <td>
+                <center>
+                    <div id="tip_11">
+                        <canvas id="canvas_cloud" class="gaugeSizeStd" width="237" height="237"></canvas>
+            </td>
+
+            <td>
+                <center>
+                    <div id="tip_5">
+                        <canvas id="canvas_baro" class="gaugeSizeStd" width="237" height="237"></canvas>
+                </center>
+            </td>
+        </tr>
+
+        <tr class="jednostki">
+            <td>
+                <center>
+                    <input id="rad_temp1" type="radio" name="rad_temp" value="out" checked
+                           onclick="gauges.doTemp(this);"><label id="lab_temp1" for="rad_temp1">Outside</label>
+                    <input id="rad_temp2" type="radio" name="rad_temp" value="in" onclick="gauges.doTemp(this);"><label
+                        id="lab_temp2" for="rad_temp2">Inside</label>
+                </center>
+            </td>
+            <td>
+                <center>
+                    <input id="rad_unitsCloudBase1" type="radio" name="rad_unitsCloud" value="m" checked
+                           onclick="gauges.setUnits(this);"><label id="lab_unitsCloudBase1"
+                                                                   for="rad_unitsCloudBase1">m</label>
+                    <input id="rad_unitsCloudBase2" type="radio" name="rad_unitsCloud" value="ft"
+                           onclick="gauges.setUnits(this);"><label id="lab_unitsCloudBase2"
+                                                                   for="rad_unitsCloudBase2">ft</label>
+                </center>
+            </td>
+            <td>
+                <center>
+                    <input id="rad_unitsPress1" type="radio" name="rad_unitsPress" value="hPa" checked
+                           onclick="gauges.setUnits(this);"><label id="lab_unitsPress1"
+                                                                   for="rad_unitsPress1">hPa</label>
+                    <input id="rad_unitsPress2" type="radio" name="rad_unitsPress" value="inHg"
+                           onclick="gauges.setUnits(this);"><label id="lab_unitsPress2" for="rad_unitsPress2">mb</label>
+                </center>
+            </td>
+        </tr>
+    </table>
+
+
+    <br><br>
+
+
+    <table style="width:100%;border-collapse: collapse; border-spacing: 0;">
+        <tr>
+            <td colspan="4" class="tableseparator_rainfall">Opad deszczu i Wilgotno&#347;&#263;</td>
+        </tr>
+        <tr class="td_rainfall_data">
+            <td>Opad dzisiejszy</td>
+            <td>0,0&nbsp;mm</td>
+            <td>Ostatni Opad</td>
+            <td>2017-10-03 09:37</td>
+        </tr>
+
+        <tr class="td_rainfall_data">
+            <td>Opad z godziny</td>
+            <td>0,0&nbsp;mm</td>
+            <td>Wilgotno&#347;&#263;</td>
+            <td>31%</td>
+        </tr>
+
+
+    </table>
+
+    <br>
+
+    <table style="width:100%">
+        <tr class="wskazniki">
+            <td>
+                <center>
+
+                    <div id="tip_2">
+                        <canvas id="canvas_rain" class="gaugeSizeStd" width="237" height="237"></canvas>
+                </center>
+            </td>
+            <td>
+                <center>
+                    <div id="tip_4">
+                        <canvas id="canvas_hum" class="gaugeSizeStd" width="237" height="237"></canvas>
+                </center>
+            </td>
+            <td>
+                <center>
+                    <div id="tip_3">
+                        <canvas id="canvas_rrate" class="gaugeSizeStd" width="237" height="237"></canvas>
+                </center>
+            </td>
+        </tr>
+    </table>
+
+
+    <br><br>
+
+
+    <!---- Facebook --->
+
+    <center>
+        <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FWiatrKadyny&width=150&layout=button_count&action=like&show_faces=false&share=true&height=75&appId"
+                width="190" height="75" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                allowTransparency="true"></iframe>
+    </center>
+
+    <!----END Facebook --->
+
+
+    <p class="credits"><br/>
+        Page updated 2017-10-04 15:40:01<br/>
+        powered by
+        <a href="http://sandaysoft.com/products/cumulus" target="_blank">Cumulus</a>
+        v1.9.4 (1100) <br>
+        and Gauges Scripts by Mark Crossley ver. 2.6.3
+        <span class="kontakt"><br>kontakt: <a href="mailto:mincek@elblag.com.pl">mincek@elblag.com.pl</a></span><br>
+        <a href="mailto:buster.zack@gmail.com">buster.zack@gmail.com</a></span>
+    </p>
+</div>
+
+<script>
+
+    require.config({
+        paths: {
+            d3: "http://d3js.org/d3.v3.min",
+            windGauge: "./scripts/wind_gauge_new/wind_gauge"
+        }
+    });
+
+    require(["windGauge"], function(windGauge){
+
+        const MAX_STRENGTH = windGauge.MAX_STRENGTH;
+        const showWind = windGauge.showWind;
+//        function processForm(e) {
+//            if (e.preventDefault) e.preventDefault();
+//            const strength = Number(e.target["strength"].value);
+//            const direction = Number(e.target["direction"].value);
+//            showWind(direction * Math.PI / 50, strength * MAX_STRENGTH / 100);
+//            return false;
+//        }
+//
+//        var form = document.getElementById('my-form');
+//        if (form.attachEvent) {
+//            form.attachEvent("submit", processForm);
+//        } else {
+//            form.addEventListener("submit", processForm);
+//        }
+
+        showWind(Math.PI / 2, 10);
+    });
+</script>
+
+</body>
+</html>

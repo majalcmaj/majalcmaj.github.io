@@ -1,0 +1,1 @@
+<#longitude>|<#latitude>|<#sunrise>|<#sunset>|<#update>|<#location>

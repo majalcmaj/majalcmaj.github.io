@@ -1,0 +1,311 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="wz_jsgraphics.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+ <!-- Combined steelseries.js & tween.js -->
+  <script src="scripts/steelseries_tween.min.js"></script>
+
+  <!-- Once you have customised this scripts to your requirements you should minimise
+       and concatenate them into a single file in the same order  as below -->
+  <script src="scripts/language.min.js"></script>
+  <script src="scripts/gauges.js"></script>
+
+  <!--Optional Wind Rose scripts -->
+
+  <script src="scripts/windrose.js"></script>
+  <script src="scripts/RGraph.common.core.min.js"></script>
+  <script src="scripts/RGraph.rose.min.js"></script> 
+
+<meta name="description" content="<#location> weather data" />
+<meta name="keywords" content="Cumulus, <#location> weather data, weather, data, weather station" />
+<title>Pogoda Live <#location></title>
+<script type="text/javascript">
+function changeImage(im) {
+  document.images["graphs"].src = im + "?" + new Date().getTime();
+}
+</script>
+<link href="weatherstyle.css" rel="stylesheet" type="text/css" />
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-83919211-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+<div id="content">
+
+
+<center><a href="http://www.wiatrkadyny.pl"><img src="/images/logo.png" alt="BRAK LOGO" width="500" height="160" /></a></center><br><br>
+
+ <!-- NAV -->
+<div class="menu_top">
+ 
+
+<ul id="nav">
+    <li>
+      <a class="button button--wayra button--border-thick button--text-upper button--size-s" href="index.htm">Aktualnie</a>
+      
+    </li>
+     <li>
+     <a class="button button--wayra button--border-thick button--text-upper button--size-s" href="wykresy.htm">Wykresy</a>
+
+    </li>
+    <li>
+      <a class="button button--wayra button--border-thick button--text-upper button--size-s" href="">Rekordy</a>
+      <ul>
+      <li><a class="button button--wayra button--border-thick button--text-upper button--size-s" href="today.htm">Dzisiaj</a></li>
+      <li><a class="button button--wayra button--border-thick button--text-upper button--size-s" href="yesterday.htm">Wczoraj</a></li>
+      <li><a class="button button--wayra button--border-thick button--text-upper button--size-s" href="thismonth.htm">Obecny&nbsp;miesi&#261;c</a></li>
+      <li><a class="button button--wayra button--border-thick button--text-upper button--size-s" href="thisyear.htm">Obecny&nbsp;rok</a></li>
+     <li><a class="button button--wayra button--border-thick button--text-upper button--size-s" href="monthlyrecord.htm">Miesi&#281;czne&nbsp;rekordy</a></li>
+	<li><a class="button button--wayra button--border-thick button--text-upper button--size-s" href="record.htm">Rekordy stacji</a></li>
+      </ul>
+
+    </li>
+    <li>
+      <a class="button button--wayra button--border-thick button--text-upper button--size-s" href="aplikacja.htm">Aplikacja</a>
+    </li>
+    <li>
+      <a class="button button--wayra button--border-thick button--text-upper button--size-s" href="prognozy.htm">Prognozy</a>
+    </li>
+     <li>
+      <a class="button button--wayra button--border-thick button--text-upper button--size-s" href="kalkulator.htm">Kalkulator wiatru</a>
+    </li>
+  </ul>
+
+
+  </div>
+
+  <!-- #NAV -->
+
+<!-- wiatr tabelka -->
+
+<table style="width:100%;border-collapse: collapse; border-spacing: 0;">
+ <tr>
+    <td colspan="4" class="tableseparator_wind">Wiatr</td>
+  </tr>
+  <tr class="td_wind_data">
+    <td>Predko&#347;&#263;&nbsp;Wiatru&nbsp;(szkwa&#321; 10min)</td>
+    <td><#wgust>&nbsp;<#windunit></td>
+    <td>Predko&#347;&#263;&nbsp;wiatru&nbsp;(&#346;rednia 10min)</td>
+    <td><#wspeed>&nbsp;<#windunit></td>
+  </tr>
+  <tr class="td_wind_data">
+    <td>Kierunek wiatru</td>
+    <td><#avgbearing>&deg; <#wdir></td>
+    <td>Beaufort&nbsp;<#beaufort></td>
+    <td><#beaudesc></td>
+  </tr>
+</table>
+<!-- wiatr tabelka -->
+
+
+
+
+<!-- grauge code -->
+
+
+<div id="strona">
+
+
+<div id="pasekStanu">
+<div id="mask" style="height:35px;" ></div>
+<Center>
+<canvas id="canvas_timer" width="70" height="25"></canvas> 
+</center>
+</div> <!-- pasek statusu end-->
+
+
+
+ 
+<!-- W I A T R -->
+
+     <Center>
+
+
+      <canvas id="canvas_dir" class="gaugeSizeStd" width="250" height="250"></canvas>
+
+
+
+  
+      <canvas id="canvas_wind" class="gaugeSizestd" width="250" height="250"></canvas> 
+
+
+      <canvas id="canvas_rose" class="gaugeSizeStd" width="250" height="250"></canvas>
+
+
+</center>
+<Center>
+<div id="pasekDolny">
+<input id="rad_unitsWind2" type="radio" name="rad_unitsWind" value="kts" checked onclick="gauges.setUnits(this);"><label id="lab_unitsWind2" for="rad_unitsWind2">knots</label>
+	  <input id="rad_unitsWind4" type="radio" name="rad_unitsWind" value="km/h" onclick="gauges.setUnits(this);"><label id="lab_unitsWind4" for="rad_unitsWind4">km/h</label>
+          <input id="rad_unitsWind3" type="radio" name="rad_unitsWind" value="m/s" onclick="gauges.setUnits(this);"><label id="lab_unitsWind3" for="rad_unitsWind3">m/s</label>
+          <input id="rad_unitsWind1" type="radio" name="rad_unitsWind" value="mph" onclick="gauges.setUnits(this);"><label id="lab_unitsWind1" for="rad_unitsWind1">mph</label>
+          
+</center>
+</div><!--2 rzad END-->
+
+
+
+<!-- grauge code -->
+
+ <span class="welcomeText">Dane aktualizowane sa co <#interval> minut, a real time co 60 sek.</span>
+ <span class="warunkiText">Warunki pogodowe z <#time></span>
+
+<!-- trends graphs -->
+
+<table style="width:100%;border-collapse: collapse; border-spacing: 0;" class="imgGraphWrap">
+  <tr>
+  <td colspan="5" style="align-self:center;" ><img src="images/wind.png" class="imgGraph" id="graphs" title="Weather Graphs" alt="Weather Graphs"/></td>
+  </tr>
+    
+  <tr>
+    <td class="td_thumbnails"><a onclick='changeImage("images/temp.png")' class="graphBTN">Temperatura powietrza</a></td>
+    <td class="td_thumbnails"><a onclick='changeImage("images/press.png")' class="graphBTN">Ci&#347;nienie powietrza</a></td>
+    <td class="td_thumbnails"><a onclick='changeImage("images/wind.png")' class="graphBTN">Predko&#347;&#263; wiatru</a></td>
+    <td class="td_thumbnails"><a onclick='changeImage("images/raint.png")' class="graphBTN">Opady deszczu</a></td>
+  </tr>
+  <tr>
+  </tr>
+</table>
+
+<!-- trends graphs -->
+
+<h2 style="text-align: left; text-transform: none;" class="firstHeader" >
+&nbsp;Szeroko&#347;&#263;&nbsp;<#latitude>&nbsp;&nbsp;&nbsp;&nbsp;D&#322;ugo&#347;&#263;&nbsp;<#longitude>&nbsp;&nbsp;&nbsp;&nbsp;Wysoko&#347;&#263;&nbsp;<#altitude></h2>
+<!-- Almanac -->
+<table style="width:100%;border-collapse: collapse; border-spacing: 0;" class="firstTable" >
+  <tbody><tr>
+    <td class="labels">&#346;wit:</td>
+    <td class="site_data" style="text-align: left;"><#dawn></td>
+    <td class="labels">Wsch&#243;d S&#322;o&#324;ca:</td>
+    <td class="site_data" style="text-align: left;"><#sunrise></td>
+    <td class="labels">Wsch&#243;d Ksi&#281;&#380;yca:</td>
+    <td class="site_data" style="text-align: left;"><#moonrise></td>
+    <td rowspan="3"><img src="images/moon.bmp" alt="Moon" width="64" height="64" style="margin: 0px 10px;horizontal-align:left" /></td>
+  </tr>
+  <tr>
+    <td class="labels">Zmierzch:</td>
+     <td class="site_data" style="text-align: left;"><#dusk></td>
+    <td class="labels">Zach&#243;d S&#322;o&#324;ca:&nbsp;</td>
+    <td class="site_data" style="text-align: left;"><#sunset></td>
+    <td class="labels">Zach&#243;d Ksi&#281;&#380;yca:</td>
+    <td class="site_data" style="text-align: left;"><#moonset></td>
+  </tr>
+  <tr>
+    <td class="labels">&#346;wiat&#322;o dzienne:</td>
+    <td class="site_data" style="text-align: left;"><#daylightlength></td>
+    <td class="labels">D&#322;ugo&#347;&#263; Dnia:</td>
+    <td class="site_data" style="text-align: left;"><#daylength></td>
+    <td class="labels">Faza Ksi&#281;&#380;yca:</td>
+    <td class="site_data" style="text-align: left;"><#moonphase>&nbsp;[<#MoonPercentAbs>%]</td>
+  </tr>
+</tbody>
+</table>
+<!-- END Almanac -->
+
+<table style="width:100%;border-collapse: collapse; border-spacing: 0;" >
+  
+  <tr>
+    <td colspan="4" class="tableseparator_temp">Temperatura i Wilgotno&#347;&#263; </td>
+  </tr>
+  <tr class="td_temperature_data">
+    <td>Temperatura</td>
+    <td><#temp>&nbsp;<#tempunit></td>
+    <td>Punkt Rosy </td>
+    <td><#dew>&nbsp;<#tempunit></td>
+  </tr>
+  <tr class="td_temperature_data">
+    <td>Temperatura Odczuwalna</td>
+    <td><#wchill>&nbsp;<#tempunit></td>
+    <td>Wilgotno&#347;&#263;</td>
+    <td><#hum>%</td>
+  </tr>
+   <tr>
+    <td colspan="4" class="tableseparator_rainfall">Opad deszczu</td>
+  </tr>
+  <tr class="td_rainfall_data">
+    <td>Opad dzisiejszy</td>
+    <td><#rfall>&nbsp;<#rainunit></td>
+    <td>Stopa opad&#243;w</td>
+    <td><#rrate>&nbsp;<#rainunit>/hr</td>
+  </tr>
+  
+  <tr class="td_rainfall_data">
+    <td>Opad z godziny</td>
+    <td><#rhour>&nbsp;<#rainunit></td>
+    <td>Ostatni Opad</td>
+    <td><#LastRainTipISO></td>
+  </tr>
+
+ 
+  <tr>
+    <td colspan="4" class="tableseparator_pressure">Ci&#347;nienie</td>
+  </tr>
+  <tr class="td_pressure_data">
+    <td>Barometr</td>
+    <td><#press>&nbsp;<#pressunit></td>
+    <td><#presstrend></td>
+    <td><#presstrendval>&nbsp;<#pressunit>/hr</td>
+  </tr>
+  <tr>
+    <td colspan="4" class=""></td>
+  </tr>
+</table>
+
+
+
+<p class="credits"><br />
+Page updated <#update><br />
+powered by
+<a href="http://sandaysoft.com/products/cumulus" target="_blank">Cumulus</a> 
+v<#version> (<#build>)
+<span class="kontakt"><br>kontakt: <a href="mailto:mincek@elblag.com.pl">mincek@elblag.com.pl</a></span><br>
+<a href="mailto:buster.zack@gmail.com">buster.zack@gmail.com</a></span>
+</p>
+</div>
+<script type="text/javascript">
+ var tempunits = "<#tempunit>";
+ var tempos = new Array("<#RCtemp>","<#RCtempTL>","<#RCtempTH>","<#temptrendtext>","<#temptrendenglish>");
+ var tempis = new Array("<#RCintemp>","","","");
+ var tempex1 = new Array("","","","");
+ var tempex2 = new Array("","","","");
+ var tempdp = new Array("<#RCdew>","","","");
+ var temphi = new Array("<#RCheatindex>","","","");
+ var tempwc = new Array("<#RCwchill>","","","");
+ var humos = new Array("<#RChum>","","","");
+ var humis = new Array("<#RCinhum>","","","");
+ var humex1 = new Array("","","","");
+ var humex2 = new Array("","","","");
+ var cloudbase = "<#cloudbase>";
+ var raintoday = new Array("<#RCrfall>","<#rainunit>","<#RCrrate>","<#RCrrateTM>");
+ var winddata = new Array("<#RCwgust>","<#bearing>","<#RCwspeed>","<#avgbearing>","<#RCwgustTM> <#windunit>, <#bearingTM>&#176; at <#TwgustTM>");
+ var hwdir = new Array(<#wdirdata>);
+ var hwspd = new Array(<#wspddata>);
+ var wsu = "<#windunit>";
+ var bardata = new Array("<#RCpress>","<#pressunit>","<#presstrend>","<#RCpressTH>","<#RCpressTL>","<#presstrendenglish>");
+ var TempColor = "";
+ var HumColor = "";
+ var RainColor = "";
+ var WindAvgColor = "";
+ var WindGustColor = "";
+ var WindHistColor = "";
+ var CloudTextColor = "";
+ var AnalogBaroTextColor = "";
+ var AnalogBaroNeedleColor = "";
+ var ExtraSensor1Name = "";
+ var ExtraSensor2Name = "";
+</script>
+<script type="text/javascript" src="dbimages/dashboard.js"></script>
+<script type="text/javascript" src="dbimages/boxover.js"></script>
+</body>
+</html>

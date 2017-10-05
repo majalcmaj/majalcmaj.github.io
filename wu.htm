@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="favicon.ico" />
+<title> Jarostacja - informacje meteorologiczne</title>
+<link rel="stylesheet" type="text/css" href="arkusz.css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+
+<body>
+<!--MENU GLOWNE-->
+<div id="MenuGlowne">
+<ul class="menu">
+ <li><a href="index.htm" class="but"  title="Strona Glowna">START</a></li>
+ <li><a href="wu.htm" class="butO" title="wykresy pogodowe">WYKRESY</a>
+ <ul>
+ <li><a href="trends.htm" class="but" title="wykresy pogodowe">WYKRESY statyczne</a>
+ </ul>
+ </li> <li><a href="today.htm" class="but" title="Dzisiejsze obserwacje">POGODA DZISIAJ</a></li>
+ <li><a href="#" class="but" title="">ARCHIWALNE WYNIKI</a>
+ <ul>
+ <li><a href="yesterday.htm"  class="but" title="Wczorajsze obserwacje">POGODA WCZORAJ</a></li>
+ <li><a href="thismonth.htm"  class="but" title="Obserwacje z ostatniego miesiaca">OSTATNI MIESIAC</a></li>
+ <li><a href="thisyear.htm" class="but" title="Obserwacje z ostatniego roku">OSTATNI ROK</a></li>
+ </ul>
+ </li>
+ <li><a href="monthlyrecord.htm"class="but" title="Zestawienie danych dla poszczególych miesięcy">WYNIKI W MIESIĄCACH</a></li>
+ <li><a href="record.htm" class="but" title="Rekordowe, zmierzone wartosci">REKORDY</a>
+ </li>
+ <li><a href="#" title="">linki</a>
+ <ul>
+<li><a href="http://polish.wunderground.com/wundermap/" title="Link do serwisu Wunderground" target="_new"> Wunderground</a></li>
+<li><a href="http://activeweather.org/" title="Polski serwis stacji pogodowych" target="_new">ActiveWeather</a></li>
+<li><a href="http://stacjapogody.waw.pl/index.php?id=mapastacji" title="Mapa polskich stacji pogodowych" target="_new">Polskie Stacje</a> </li>
+<li><a href="http://www.sat24.com/en/eu" title="Znakomity serwis meteorologiczny" target="_new">Meteosat</a></li>
+<li><a href="http://earth.nullschool.net/#current/wind/isobaric/1000hPa/orthographic=-340.49,46.32,2048" title="Animowana Mapa Wiatrów" target="_new">Windmap</a> </li>
+<li><a href="gauges.htm" title="Prognoza numeryczna ICM" target="_new">Prognoza ICM</a></li>
+ </ul>
+ </li>
+</ul>
+</div>
+<!--MENU GLOWNE END-->
+<div id="strona">
+<!-- NAGLOWEK STAD  -->
+		<div id="ident">
+				<h1>TU SKOPIUJ NAZWĘ SWOJEJ STACJI</h1>
+				<h3>TU SKOPIUJ OPIS TWOJEJ STACJI</h3>
+			</div>
+<!--NAGLOWEK DOTAD-->
+<div id="pasekGorny" style="height:30px;"></div>
+<!--ZAWARTOSC STRONY -->
+<div>
+<iframe style="width:1000px; height:960px; border:none;" src="wugraphs.php?lang=pl">Twoja przeglądarka nie akceptuje ramek!</iframe>
+</div>
+<!--ZAWARTOSC STRONY end-->
+<div id="pasekDolny"></div>
+<div id="Stopka">
+Strona aktualizowana <#update><br />
+Oprogramowanie <a href="http://sandaysoft.com/products/cumulus">Cumulus</a> v<#version> (<#build>)<br/>
+Projekt strony: <a href="http://zielona10.ehost.pl" title="Strona pogodowa zielona10.pl" target="_blank">jarostacja</a> z wykorzystaniem elementów <a href="http://weatherbyyou.com/" target="_blank">Weather Blues</a><br />
+</div>
+</div>
+</div>
+<!-- koniec zawartosci strony -->
+<!--powrót do góry strony-->
+<a id="gototop" title="Do góry" href="#"></a>
+
+<script>
+$(document).ready(function(){
+   $('#gototop').hide();
+   $(window).scroll(function(){
+      if ($(this).scrollTop() > 100) {
+         $('#gototop').fadeIn(500);
+      }
+      else {
+         $('#gototop').fadeOut(500);
+      }
+   });
+   $('#gototop').click(function(){
+      $('html, body').animate({ scrollTop: 0 }, 1000);
+      return false;
+   });
+});
+</script>
+</body>
+</html>

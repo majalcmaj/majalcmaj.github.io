@@ -1,0 +1,10 @@
+#wind-container > svg{
+    width: 250px;
+    height: 250px;
+    visibility: visible;
+    display: block;
+}
+
+#wind-container > svg > image{
+    overflow: visible;
+}

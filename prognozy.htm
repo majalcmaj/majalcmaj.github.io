@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<!-- favico-->
+<link rel="apple-touch-icon" sizes="57x57" href="/images/favico/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/images/favico/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/images/favico/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/images/favico/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/images/favico/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/images/favico/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/images/favico/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/images/favico/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/favico/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/images/favico/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favico/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/images/favico/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favico/favicon-16x16.png">
+<link rel="manifest" href="/images/favico/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/images/favico/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--favico-->
+<meta charset="UTF-8">
+<script src="wz_jsgraphics.js" type="text/javascript"></script>
+<meta name="description" content="Kadyny spot weather data" />
+<meta name="keywords" content="Cumulus, Kadyny spot weather data, weather, data, weather station" />
+<title>Pogoda Live Kadyny spot</title>
+<script type="text/javascript">
+function changeImage(im) {
+  document.images["graphs"].src = im + "?" + new Date().getTime();
+}
+</script>
+<link href="weatherstyle.css" rel="stylesheet" type="text/css" />
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-83919211-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+<div id="content">
+
+
+<center><a href="http://www.wiatrkadyny.pl"><img src="/images/logo.png" alt="BRAK LOGO" width="500" height="160" /></a></center><br><br>
+
+ 
+ <!-- NAV -->
+<div class="menu_top">
+ 
+
+<ul id="nav">
+    <li>
+      <a class="button button--wayra button--border-thick button--text-upper button--size-s" href="index.htm">Aktualnie</a>
+      
+    </li>
+     <li>
+     <a class="button button--wayra button--border-thick button--text-upper button--size-s" href="wykresy.htm">Wykresy</a>
+
+    </li>
+    <li>
+      <a class="button button--wayra button--border-thick button--text-upper button--size-s" href="">Rekordy</a>
+      <ul>
+      <li><a class="button button--wayra button--border-thick button--text-upper button--size-s" href="today.htm">Dzisiaj</a></li>
+      <li><a class="button button--wayra button--border-thick button--text-upper button--size-s" href="yesterday.htm">Wczoraj</a></li>
+      <li><a class="button button--wayra button--border-thick button--text-upper button--size-s" href="thismonth.htm">Obecny&nbsp;miesi&#261;c</a></li>
+      <li><a class="button button--wayra button--border-thick button--text-upper button--size-s" href="thisyear.htm">Obecny&nbsp;rok</a></li>
+     <li><a class="button button--wayra button--border-thick button--text-upper button--size-s" href="monthlyrecord.htm">Miesi&#281;czne&nbsp;rekordy</a></li>
+	<li><a class="button button--wayra button--border-thick button--text-upper button--size-s" href="record.htm">Rekordy stacji</a></li>
+      </ul>
+
+    </li>
+    <li>
+      <a class="button button--wayra button--border-thick button--text-upper button--size-s" href="aplikacja.htm">Aplikacja</a>
+    </li>
+    <li>
+      <a class="button button--wayra button--border-thick button--text-upper button--size-s" href="prognozy.htm">Prognozy</a>
+    </li>
+     <li>
+      <a class="button button--wayra button--border-thick button--text-upper button--size-s" href="kalkulator.htm">Kalkulator wiatru</a>
+    </li>
+  </ul>
+
+
+  </div>
+
+  <!-- #NAV -->
+<CENTER>
+<font color="black">
+Poni&#380;ej przedstawione zosta&#322;y najpopularniejsze prognozy pogody dla Kadyn.<br><br>
+
+
+
+
+<!-- #windfinder -->
+<script type="text/javascript" src="https://www.windfinder.com/widget/forecast/js/kadyny?unit_wave=m&unit_rain=mm&unit_temperature=c&unit_wind=kts&columns=2&days=4&show_day=0"></script><noscript><a href='https://www.windfinder.com/forecast/kadyny?utm_source=forecast&utm_medium=web&utm_campaign=homepageweather&utm_content=noscript-forecast'>Wind forecast for Kadyny/Zalew Wiœlany</a> provided by <a href='https://www.windfinder.com?utm_source=forecast&utm_medium=web&utm_campaign=homepageweather&utm_content=noscript-logo'>windfinder.com</a></noscript>
+<!-- #windfinder -->
+
+<br><br>
+
+<!--#icm -->
+
+<table style="width:100%;border-collapse: collapse; border-spacing: 0;" >
+<a href="http://m.meteo.pl/search/pl?miastoPL=&wspolrzednePL=N54%C2%B022%27+E19%C2%B042%27&typePL=coords&prognozaPL=60&slugPL=" target="_blank"><img src="http://www.meteo.pl/um/metco/mgram_pict.php?ntype=0u&row=346&col=227&lang=pl" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="600px" width="650px" allowfullscreen></img></a>
+</center>
+<!--#icm -->
+
+<br><br>
+<center>
+<!-- #windguru -->
+<script src="http://widget.windguru.cz/js/wg_widget.php" type="text/javascript"></script>
+<script language="JavaScript" type="text/javascript">
+//<![CDATA[
+WgWidget({
+s: 238914, odh:0, doh:24, wj:'knots', tj:'c', waj:'m', fhours:72, lng:'pl',
+params: ['WINDSPD','GUST','SMER','TMPE','CDC','APCPs'],
+first_row:true,
+spotname:true,
+first_row_minfo:true,
+last_row:true,
+lat_lon:true,
+tz:true,
+sun:true,
+link_archive:false,
+link_new_window:true
+},
+'wg_target_div_238914_81052179'
+);
+//]]>
+</script>
+<div id="wg_target_div_238914_81052179"></div>
+</center>
+<!-- #windguru -->
+<Center>
+<br><Br>
+
+<!--#pogodynka -->
+<script type="text/javascript" src="http://www.pogodynka.pl/widget/getwide/kadyny_tolkmicko/?a1=null&a2=null"></script>
+<!--#pogodynka -->
+
+<br><Br>
+
+<!-- #windyty -->
+<iframe src="https://embed.windytv.com/?54.300,19.464,11,menu,message,marker" width="750" height="500" frameborder="0"></iframe>
+<!-- #windyty -->
+
+<br><br>
+
+<!--#yr.no -->
+<script src="http://www.yr.no/place/Poland/Warmia-Masuria/Kadyny/external_box_hour_by_hour.js"></script><noscript><a href="http://www.yr.no/place/Poland/Warmia-Masuria/Kadyny/">yr.no: Forecast for Kadyny</a></noscript>
+<!--#yr.no -->
+
+
+
+</center>
+
+<Br><br><br>
+
+
+<p class="credits"><br />
+
+<span class="kontakt"><br>kontakt: <a href="mailto:mincek@elblag.com.pl">mincek@elblag.com.pl</a></span><br>
+<a href="mailto:buster.zack@gmail.com">buster.zack@gmail.com</a></span>
+</p>
+</div>
+<script type="text/javascript">
+ var tempunits = "<#tempunit>";
+ var tempos = new Array("<#RCtemp>","<#RCtempTL>","<#RCtempTH>","<#temptrendtext>","<#temptrendenglish>");
+ var tempis = new Array("<#RCintemp>","","","");
+ var tempex1 = new Array("","","","");
+ var tempex2 = new Array("","","","");
+ var tempdp = new Array("<#RCdew>","","","");
+ var temphi = new Array("<#RCheatindex>","","","");
+ var tempwc = new Array("<#RCwchill>","","","");
+ var humos = new Array("<#RChum>","","","");
+ var humis = new Array("<#RCinhum>","","","");
+ var humex1 = new Array("","","","");
+ var humex2 = new Array("","","","");
+ var cloudbase = "<#cloudbase>";
+ var raintoday = new Array("<#RCrfall>","<#rainunit>","<#RCrrate>","<#RCrrateTM>");
+ var winddata = new Array("<#RCwgust>","<#bearing>","<#RCwspeed>","<#avgbearing>","<#RCwgustTM> <#windunit>, <#bearingTM>&#176; at <#TwgustTM>");
+ var hwdir = new Array(<#wdirdata>);
+ var hwspd = new Array(<#wspddata>);
+ var wsu = "<#windunit>";
+ var bardata = new Array("<#RCpress>","<#pressunit>","<#presstrend>","<#RCpressTH>","<#RCpressTL>","<#presstrendenglish>");
+ var TempColor = "";
+ var HumColor = "";
+ var RainColor = "";
+ var WindAvgColor = "";
+ var WindGustColor = "";
+ var WindHistColor = "";
+ var CloudTextColor = "";
+ var AnalogBaroTextColor = "";
+ var AnalogBaroNeedleColor = "";
+ var ExtraSensor1Name = "";
+ var ExtraSensor2Name = "";
+</script>
+<script type="text/javascript" src="dbimages/dashboard.js"></script>
+<script type="text/javascript" src="dbimages/boxover.js"></script>
+</body>
+</html>

@@ -1,0 +1,1240 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--Cumulus WebTag XML Data file - version 1.8-->
+<weatherdata>
+<timetags>
+	<item name="date">
+		<value>16.06.2016</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>The current date</description>
+	</item>
+	<item name="time">
+		<value>15:08 on 16 czerwiec 2016</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>The current time</description>
+	</item>
+	<item name="day">
+		<value>16</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>The current day as a 2-digit number</description>
+	</item>
+	<item name="dayname">
+		<value>czwartek</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>The current day as a word</description>
+	</item>
+	<item name="shortdayname">
+		<value>czw.</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>The current day as a shortened word</description>
+	</item>
+	<item name="month">
+		<value>06</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>The current month as a 2-digit number</description>
+	</item>
+	<item name="monthname">
+		<value>czerwiec</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>The current month as a word</description>
+	</item>
+	<item name="shortmonthname">
+		<value>cze</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>The current month as a shortened word</description>
+	</item>
+	<item name="year">
+		<value>2016</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>The current year as a 4-digit number</description>
+	</item>
+	<item name="shortyear">
+		<value>16</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>The current year as a 2-digit number</description>
+	</item>
+	<item name="hour">
+		<value>15</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>The current hour as a 2-digit number</description>
+	</item>
+	<item name="minute">
+		<value>08</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>The current minute as a 2-digit number</description>
+	</item>
+	<item name="TtempTH">
+		<value>14:50</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Time of Today's temperature high</description>
+	</item>
+	<item name="TtempTL">
+		<value>00:00</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Time of Today's temperature low</description>
+	</item>
+	<item name="TtempYH">
+		<value>21:57</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Time of Yesterday's temperature high</description>
+	</item>
+	<item name="TtempYL">
+		<value>23:53</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Time of Yesterday's temperature low</description>
+	</item>
+	<item name="TtempH">
+		<value>at 14:50 on 16 czerwiec 2016</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Date and Time of all time temperature high</description>
+	</item>
+	<item name="TtempL">
+		<value>at 23:53 on 15 czerwiec 2016</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Date and Time of all time temperature low</description>
+	</item>
+	<item name="TmintempH">
+		<value>at 23:53 on 15 czerwiec 2016</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Date and Time of all time high minimum temperature</description>
+	</item>
+	<item name="TmaxtempL">
+		<value>at 21:57 on 15 czerwiec 2016</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Date and Time of all time low maximum temperature</description>
+	</item>
+	<item name="TpressTH">
+		<value>14:15</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Time of Today's highest pressure reading</description>
+	</item>
+	<item name="TpressTL">
+		<value>00:00</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Time of Today's lowest pressure reading</description>
+	</item>
+	<item name="TpressYH">
+		<value>22:10</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Time of Yesterday's high pressure reading</description>
+	</item>
+	<item name="TpressYL">
+		<value>22:57</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Time of Yesterday's lowest pressure reading</description>
+	</item>
+	<item name="TpressH">
+		<value>at 14:15 on 16 czerwiec 2016</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Date and Time of all time pressure high</description>
+	</item>
+	<item name="TpressL">
+		<value>at 22:57 on 15 czerwiec 2016</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Date and Time of all time pressure low</description>
+	</item>
+	<item name="TwindTM">
+		<value>13:39</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Time of Today's maximum wind speed</description>
+	</item>
+	<item name="TwindYM">
+		<value>22:39</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Time of Yesterday's maximum wind speed</description>
+	</item>
+	<item name="TwgustTM">
+		<value>14:13</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Time of Today's maximum wind gust</description>
+	</item>
+	<item name="TwgustYM">
+		<value>23:56</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Time of Yesterday's maximum wind gust</description>
+	</item>
+	<item name="TgustM">
+		<value>at 14:13 on 16 czerwiec 2016</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Time and Date of all time high wind gust</description>
+	</item>
+	<item name="TwspeedH">
+		<value>at 13:39 on 16 czerwiec 2016</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Time and Date of all time high average wind speed</description>
+	</item>
+	<item name="TwchillH">
+		<value>at 23:53 on 15 czerwiec 2016</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Time and Date of all time highest wind chill</description>
+	</item>
+	<item name="TrrateTM">
+		<value>06:24</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Time of Today's maximum Rain Rate</description>
+	</item>
+	<item name="TrrateYM">
+		<value>23:09</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Time of Yesterday's maximum rain rate</description>
+	</item>
+	<item name="TrrateM">
+		<value>at 23:09 on 15 czerwiec 2016</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Date and Time of all time high rain rate</description>
+	</item>
+	<item name="TrfallH">
+		<value>on 15 czerwiec 2016</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Date and Time of all time high daily rain</description>
+	</item>
+	<item name="TrfallhH">
+		<value>at 23:09 on 15 czerwiec 2016</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Date and Time of all time high hourly rain</description>
+	</item>
+	<item name="TrfallmH">
+		<value>czerwiec 2016</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Date and Time of all time high monthly rain</description>
+	</item>
+	<item name="recordsbegandate">
+		<value>15 czerwiec 2016</value>
+		<unit></unit>
+		<image></image>
+		<class>static</class>
+		<description>The date that the all time records began</description>
+	</item>
+	<item name="realtimeinterval">
+		<value>60</value>
+		<unit><![CDATA[&nbsp;seconds]]></unit>
+		<image></image>
+		<class>static</class>
+		<description>The realtime update interval in seconds</description>
+	</item>
+	<item name="rollovertime">
+		<value>midnight</value>
+		<unit></unit>
+		<image></image>
+		<class>static</class>
+		<description>The time that the logs rollover to the next day</description>
+	</item>
+</timetags>
+<temperaturetags>
+	<item name="temp">
+		<value>25,7</value>
+		<unit><![CDATA[&deg;C]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>The outside temperature</description>
+	</item>
+	<item name="intemp">
+		<value>21,9</value>
+		<unit><![CDATA[&deg;C]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>The inside temperature</description>
+	</item>
+	<item name="temptrend">
+		<value>+1,1</value>
+		<unit><![CDATA[&deg;C/hr]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>The change in temperature over the last hour</description>
+	</item>
+	<item name="temptrendtext">
+		<value>Rising</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>The change in temperature over the last hour in words</description>
+	</item>
+	<item name="temptrendenglish">
+		<value>Rising</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>A single word description of temperature change over the last hour. Useful for Javascript coding.</description>
+	</item>
+	<item name="tempTH">
+		<value>25,8</value>
+		<unit><![CDATA[&deg;C]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Today's highest temperature</description>
+	</item>
+	<item name="tempTL">
+		<value>12,1</value>
+		<unit><![CDATA[&deg;C]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Today's lowest temperature</description>
+	</item>
+	<item name="tempYH">
+		<value>14,4</value>
+		<unit><![CDATA[&deg;C]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Yesterday's highest temperature</description>
+	</item>
+	<item name="tempYL">
+		<value>12,1</value>
+		<unit><![CDATA[&deg;C]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Yesterday's lowest temperature</description>
+	</item>
+	<item name="tempH">
+		<value>25,8</value>
+		<unit><![CDATA[&deg;C]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>All time high temperature</description>
+	</item>
+	<item name="tempL">
+		<value>12,1</value>
+		<unit><![CDATA[&deg;C]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>All time low temperature</description>
+	</item>
+	<item name="mintempH">
+		<value>12,1</value>
+		<unit><![CDATA[&deg;C]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>All time high minimum temperature</description>
+	</item>
+	<item name="maxtempL">
+		<value>14,4</value>
+		<unit><![CDATA[&deg;C]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>All time low maximum temperature</description>
+	</item>
+	<item name="heatindex">
+		<value>25,7</value>
+		<unit><![CDATA[&deg;C]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Current heat index</description>
+	</item>
+	<item name="humidex">
+		<value>27,5</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Current Humidex</description>
+	</item>
+	<item name="hum">
+		<value>40</value>
+		<unit>%</unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>The outside humidity</description>
+	</item>
+	<item name="inhum">
+		<value>55</value>
+		<unit>%</unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>The inside humidity</description>
+	</item>
+	<item name="tempunit">
+		<value><![CDATA[&deg;C]]></value>
+		<unit></unit>
+		<image></image>
+		<class>unit</class>
+		<description>Temperature Unit</description>
+	</item>
+</temperaturetags>
+<pressuretags>
+	<item name="press">
+		<value>1017,1</value>
+		<unit><![CDATA[&nbsp;hPa]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>The sea level pressure</description>
+	</item>
+	<item name="presstrend">
+		<value>Rising slowly</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>The pressure trend in words</description>
+	</item>
+	<item name="presstrendval">
+		<value>0,1</value>
+		<unit><![CDATA[&nbsp;hPa/hr]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>The pressure trend in figures</description>
+	</item>
+	<item name="presstrendenglish">
+		<value>Rising</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>A single word description for the pressure trend. Useful in Javascript coding.</description>
+	</item>
+	<item name="pressTH">
+		<value>1017,4</value>
+		<unit><![CDATA[&nbsp;hPa]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Today's highest pressure reading</description>
+	</item>
+	<item name="pressTL">
+		<value>1013,5</value>
+		<unit><![CDATA[&nbsp;hPa]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Today's lowest pressure reading</description>
+	</item>
+	<item name="pressYH">
+		<value>1013,7</value>
+		<unit><![CDATA[&nbsp;hPa]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Yesterday's highest pressure reading</description>
+	</item>
+	<item name="pressYL">
+		<value>1013,2</value>
+		<unit><![CDATA[&nbsp;hPa]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Yesterday's lowest pressure reading</description>
+	</item>
+	<item name="pressH">
+		<value>1017,4</value>
+		<unit><![CDATA[&nbsp;hPa]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>All time high pressure</description>
+	</item>
+	<item name="pressL">
+		<value>1013,2</value>
+		<unit><![CDATA[&nbsp;hPa]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>All time low pressure</description>
+	</item>
+	<item name="pressunit">
+		<value><![CDATA[hPa]]></value>
+		<unit></unit>
+		<image></image>
+		<class>unit</class>
+		<description>Pressure Unit</description>
+	</item>
+</pressuretags>
+<raintags>
+	<item name="rrate">
+		<value>0,0</value>
+		<unit><![CDATA[&nbsp;mm/hr]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>The current rainfall rate</description>
+	</item>
+	<item name="rhour">
+		<value>0,0</value>
+		<unit><![CDATA[&nbsp;mm]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>The rainfall in the last hour</description>
+	</item>
+	<item name="rfall">
+		<value>1,8</value>
+		<unit><![CDATA[&nbsp;mm]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>The total rainfall so far today</description>
+	</item>
+	<item name="rfallY">
+		<value>7,5</value>
+		<unit><![CDATA[&nbsp;mm]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>The total rainfall for yesterday</description>
+	</item>
+	<item name="rmidnight">
+		<value>1,8</value>
+		<unit><![CDATA[&nbsp;mm]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>The total rainfall since midnight</description>
+	</item>
+	<item name="rmonth">
+		<value>9,3</value>
+		<unit><![CDATA[&nbsp;mm]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>The total rainfall so far this month</description>
+	</item>
+	<item name="ryear">
+		<value>9,3</value>
+		<unit><![CDATA[&nbsp;mm]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>The total rainfall so far this year</description>
+	</item>
+	<item name="rrateM">
+		<value>90,0</value>
+		<unit><![CDATA[&nbsp;mm/hr]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>All time high rain rate</description>
+	</item>
+	<item name="rfallH">
+		<value>7,5</value>
+		<unit><![CDATA[&nbsp;mm]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>All time high daily rain</description>
+	</item>
+	<item name="rfallhH">
+		<value>7,5</value>
+		<unit><![CDATA[&nbsp;mm]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>All time high hourly rain</description>
+	</item>
+	<item name="rfallmH">
+		<value>9,3</value>
+		<unit><![CDATA[&nbsp;mm]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>All time high monthly rain</description>
+	</item>
+	<item name="rrateTM">
+		<value>18,0</value>
+		<unit><![CDATA[&nbsp;mm/hr]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Today's maximum rain rate</description>
+	</item>
+	<item name="rrateYM">
+		<value>90,0</value>
+		<unit><![CDATA[&nbsp;mm/hr]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Yesterday's maximum rain rate</description>
+	</item>
+	<item name="dew">
+		<value>11,1</value>
+		<unit><![CDATA[&deg;C]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>The outside dew point</description>
+	</item>
+	<item name="rainunit">
+		<value><![CDATA[mm]]></value>
+		<unit></unit>
+		<image></image>
+		<class>unit</class>
+		<description>Rain Unit</description>
+	</item>
+</raintags>
+<windtags>
+	<item name="wspeed">
+		<value>3,9</value>
+		<unit><![CDATA[&nbsp;kts]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>The current wind speed reading</description>
+	</item>
+	<item name="wgust">
+		<value>7,2</value>
+		<unit><![CDATA[&nbsp;kts]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>The current wind gust reading</description>
+	</item>
+	<item name="wchill">
+		<value>25,7</value>
+		<unit><![CDATA[&deg;C]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>The current wind chill temperature</description>
+	</item>
+	<item name="wlatest">
+		<value>6,6</value>
+		<unit><![CDATA[&nbsp;kts]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Latest wind speed reading from console</description>
+	</item>
+	<item name="bearing">
+		<value>270</value>
+		<unit><![CDATA[&deg;]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>The current wind bearing</description>
+	</item>
+	<item name="avgbearing">
+		<value>341</value>
+		<unit><![CDATA[&deg;]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Average wind bearing over last 10 minutes</description>
+	</item>
+	<item name="wdir">
+		<value>NNW</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Average wind bearing as a compass point</description>
+	</item>
+	<item name="wdirdata">
+		<value>135,45,45,45,45,45,112,112,112,112,112,45,45,45,45,90,90,90,90,45,45,45,45,45,45,45,45,45,45,315,315,315,315,315,45,45,45,45,45,315,315,315,315,338,338,338,338,338,270,270,270,270,270,315,315,315,315,315,180,180,180,180,180,90,90,90,90,45,45,45,45,45,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,360,360,360,360,360,360,360,360,360,360,90,90,90,90,90,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,90,90,90,90,90,270,270,270,270,270,270,270,270,270,45,45,45,45,45,45,45,45,45,45,90,90,90,90,90,315,315,315,315,315,360,360,360,360,90,90,90,90,90,360,360,360,360,360,45,45,45,45,45,90,90,135,135,135,135,135,135,135,135,135,45,45,45,45,45,45,45,45,45,45,45,45,45,45,90,90,90,90,90,360,360,360,360,360,90,90,90,90,90,45,45,45,45,45,90,90,90,90,90,315,315,315,315,68,68,68,68,68,45,45,45,45,45,135,135,135,135,135,90,90,90,90,90,90,90,90,90,315,315,315,315,315,360,360,360,360,360,45,45,45,45,45,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,315,315,315,315,90,90,90,90,90,135,135,135,135,135,135,135,135,135,135,315,315,315,315,315,315,315,315,315,90,90,90,90,360,360,360,360,360,22,22,22,22,22,45,45,45,45,45,45,45,45,45,45,360,360,360,360,45,45,45,45,45,45,45,45,45,45,360,360,360,360,360,135,135,135,135,45,45,45,45,45,360,360,360,360,360,45,45,45,45,45,360,360,360,360,360,45,45,45,45,45,45,45,45,45,135,135,135,135,135,360,360,360,360,360,90,90,90,90,90,90,90,90,90,360,360,360,360,360,45,45,45,45,45,45,45,45,45,45,22,22,22,22,22,360,360,360,360,45,45,45,45,45,45,45,45,45,45,360,360,360,360,360,45,45,45,45,45,45,45,45,45,45,68,68,68,68,360,360,360,360,360,360,360,360,360,360,45,45,45,45,45,45,45,45,45,90,90,90,90,90,90,90,90,90,90,45,45,45,45,90,90,90,90,90,45,45,45,45,45,22,22,22,22,90,90,90,90,90,45,45,45,45,45,45,45,45,45,45,360,360,360,360,22,22,22,22,22,360,360,360,360,360,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,90,90,90,90,90,45,45,45,45,45,45,45,45,45,45,225,225,225,225,225,45,45,45,45,360,360,360,360,360,90,90,90,90,90,45,45,45,45,45,338,338,338,338,292,292,292,292,292,360,360,360,360,360,315,315,315,315,315,360,360,360,360,360,360,360,360,360,360,90,90,90,90,315,315,315,315,315,90,90,90,90,90,45,45,45,45,45,45,45,45,45,45,45,45,45,45,90,90,90,90,90,315,315,315,315,315,315,315,315,315,315,315,315,315,315,45,45,45,45,22,22,22,22,22,315,315,315,315,315,315,315,315,315,315,90,90,90,90,90,45,45,45,45,90,90,90,90,90,315,315,315,315,315,45,45,45,45,45,315,315,315,315,315,90,90,90,90,90,90,90,90,90,360,360,360,360,360,315,315,315,315,315,90,90,90,90,22,22,22,22,22,45,45,45,45,45,90,90,90,90,90,90,90,90,90,90,360,360,360,360,360,180,180,180,180,270,270,270,270,270,45,45,45,45,45,112,112,112,112,112,315,315,315,315,315,360,360,360,360,315,315,315,315,315,90,90,90,90,90,360,360,360,360,360,45,45,45,45,45,45,45,45,45,315,315,315,315,315,270,270,270,270,270,22,22,22,22,22,45,45,45,45,45,45,45,45,45,180,180,180,180,180,315,315,315,315,90,90,90,90,90,180,180,180,180,180,360,360,360,360,45,45,45,45,45,45,45,45,45,45,270,270,270,270,270,360,360,360,360,360,45,45,45,45,90,90,90,90,90,315,315,315,315,315,270,270,270,270,270,315,315,315,315,360,360,360,360,360,360,360,360,360,360,360,360,360,360,360,180,180,180,180,180,225,225,225,225,225,270,270,270,270,225,225,225,225,225,112,112,112,112,112,112,112,112,112,112,315,315,315,315,315,315,315,315,315,315,315,315,315,315,315,315,315,315,315,315,315,315,315,315,315,315,315,315,315,315,315,315,315,315,315,315,315,315,315,315,315,315,315,315,315,315,315,315,45,45,45,45,45,45,45,45,45,45,45,45,45,45,90,90,90,90,90,360,360,360,360,360,360,360,360,360,135,135,135,135,315,315,315,315,315,90,90,90,90,90,315,315,315,315,315,45,45,45,45,315,315,315,315,315,360,360,360,360,360,45,45,45,45,45,292,292,292,292,292,68,68,68,68,45,45,45,45,45,225,225,225,225,225,90,90,90,90,90,68,68,68,68,68,45,45,45,45,45,22,22,22,22,315,315,315,315,315,315,315,315,315,315,315,315,315,315,315,90,90,90,90,90,90,90,90,90,45,45,45,45,45,315,315,315,315,315,45,45,45,45,45,360,360,360,360,360,315,315,315,315,315,315,315,315,315,270,270,270,270,270,270,270,270,270,270,315,315,315,315,315,270,270,270,270,270,270,270,270,270,270,270,270,270,270,360,360,360,360,360,315,315,315,315,315,360,360,360,360,270,270,270,270,270,45,45,45,45,292,292,292,292,292,270,270,270,270,270,360,360,360,360,45,45,45,45,45,225,225,225,225,225,315,315,315,315,315,45,45,45,45,45,45,45,45,45,270,270,270,270,270,90,90,90,90,90,90,90,90,90,90,90,90,90,90,45,45,45,45,45,90,90,90,90,90,45,45,45,45,45,90,90,90,90,90,360,360,360,360,360,315,315,315,315,270,270,270,270,270,45,45,45,45,45,315,315,315,315,315,292,292,292,292,292,292,292,292,292,315,315,315,315,315,270,270,270,270,270,270,270,270,270,270,360,360,360,360,225,225,225,225,225,45,45,45,45,45,360,360,360,360,360,45,45,45,45,45,45,45,45,45,45,90,90,90,90,45,45,45,45,45,360,360,360,360,360,45,45,45,45,45,360,360,360,360,90,90,90,90,180,180,180,180,180,45,45,45,45,45,225,225,225,225,225,90,90,90,90,90,90,90,90,90,45,45,45,45,45,360,360,360,360,360,315,315,315,315,315,315,315,315,315,315,135,135,135,135,315,315,315,315,315,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,22,22,22,22,22,90,90,90,90,90,315,315,315,315,315,315,315,315,315,315,90,90,90,90,135,135,135,135,135,360,360,360,360,360,360,360,360,360,360,45,45,45,45,45,360,360,360,360,360,360,360,360,360,90,90,90,90,90,68,68,68,68,68,45,45,45,45,45,45,45,45,45,360,360,360,360,360,90,90,90,90,90,90,90,90,90,90,45,45,45,45,45,90,90,90,90,45,45,45,45,45,360,360,360,360,90,90,90,90,90,45,45,45,45,135,135,135,135,135,45,45,45,45,45,45,45,45,45,45,360,360,360,360,360,45,45,45,45,45,45,45,45,45,315,315,315,315,315,315,315,315,315,315,112,112,112,112,112,360,360,360,360,360,45,45,45,45,315,315,315,315,315,90,90,90,90,90,112,112,112,112,112,315,315,315,315,315,90,90,90,90,90,90,90,90,90,135,135,135,135,135,315,315,315,315,315,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,360,360,360,360,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,315,315,315,315,315,45,45,45,45,45,45,45,45,45,360,360,360,360,45,45,45,45,45,315,315,315,315,315,360,360,360,360,360,45,45,45,45,45,45,45,45,45,315,315,315,315,315,90,90,90,90,90,315,315,315,315,315,315,315,315,315,315,248,248,248,248,45,45,45,45,45,45,45,45,45,45,315,315,315,315,315,135,135,135,135,135,45,45,45,45,315,315,315,315,315,180,180,180,180,180,22,22,22,22,360,360,360,360,360,360,360,360,360,360,45,45,45,45,45,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,315,315,315,315,180,180,180,180,180,45,45,45,45,45,90,90,90,90,90,360,360,360,360,360,360,360,360,360,360,360,360,360,360,180,180,180,180,180,360,360,360,360,360,292,292,292,292,292,315,315,315,315,135,135,135,135,315,315,315,315,315,225,225,225,225,315,315,315,315,315,315,315,315,315,315,90,90,90,90,90,270,270,270,270,270,22,22,22,22,315,315,315,315,315,315,315,315,315,315,90,90,90,90,90,90,90,90,90,90,270,270,270,270,270,360,360,360,360,360,45,45,45,45,315,315,315,315,315,45,45,45,45,45,45,45,45,45,45,135,135,135,135,135,360,360,360,360,45,45,45,45,45,360,360,360,360,360,45,45,45,45,45,315,315,315,315,315,45,45,45,45,90,90,90,90,90,90,90,90,90,90,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,135,135,135,135,135,292,292,292,292,292,45,45,45,45,45,135,135,135,135,22,22,22,22,22,68,68,68,68,68,360,360,360,360,90,90,90,90,90,90,90,90,90,90,90,90,90,90,360,360,360,360,360,360,360,360,360,360,360,360,360,360,360,158,158,158,158,360,360,360,360,360,135,135,135,135,135,135,135,135,135,135,45,45,45,45,45,338,338,338,338,315,315,315,315,315,180,180,180,180,180,135,135,135,135,135,90,90,90,90,90,45,45,45,45,45,45,45,45,45,135,135,135,135,135,135,135,135,135,135,45,45,45,45,45,68,68,68,68,45,45,45,45,45,315,315,315,315,315,360,360,360,360,90,90,90,90,90,90,45,45,45,45,315,315,315,315,315,292,292,292,292,292,45,45,45,45,45,45,45,45,45,45,270,270,270,270,135,135,135,135,135,90,90,90,90,90,315,315,315,315,45,45,45,45,45,45,45,45,45,45,315,315,315,315,90,90,90,90,90,180,180,180,180,180,360,360,360,360,360,315,315,315,315,315,315,315,315,315,135,135,135,135,135,45,45,45,45,45,90,90,90,90,90,112,112,112,112,360,360,360,360,360,22,22,22,22,22,315,315,315,315,315,158,158,158,158,158,45,45,45,45,315,315,315,315,315,270,270,270,270,270,90,90,90,90,90,45,45,45,45,45,135,135,135,135,90,90,90,90,90,315,315,315,315,315,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,360,360,360,360,360,315,315,315,315,315,45,45,45,45,45,45,45,45,45,68,68,68,68,68,90,90,90,90,90,270,270,270,270,270,270,270,270,270,315,315,315,315,315,315,315,315,315,225,225,225,225,225,360,360,360,360,360,360,360,360,360,360,360,360,360,360,270,270,270,270,270,45,45,45,45,45,360,360,360,360,360,360,360,360,360,360,45,45,45,45,45,45,45,45,45,90,90,90,90,90,45,45,45,45,45,360,360,360,360,360,315,315,315,315,45,45,45,45,45,45,45,45,45,45,360,360,360,360,315,315,315,315,315,315,90,90,90,90,360,360,360,360,360,360,360,360,360,360,315,315,315,315,180,180,180,180,180,180,45,45,45,45,45,45,45,45,45,90,90,90,90,90,315,315,315,315,112,112,112,112,112,112,45,45,45,45,45,45,45,45,45,248,248,248,248,248,360,360,360,360,90,90,90,90,90,90,45,45,45,45,90,90,90,90,45,45,45,45,45,90,90,90,90,90,90,90,90,90,90,135,135,135,135,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,90,90,90,90,180,180,180,180,180,315,315,315,315,315,315,315,315,315,315,45,45,45,45,45,45,45,45,45,360,360,360,360,360,90,90,90,90,90,315,315,315,315,315,45,45,45,45,45,45,45,45,45,45,45,45,45,45,112,112,112,112,112,22,22,22,22,360,360,360,360,360,360,90,90,90,90,135,135,135,135,135,45,45,45,45,45,270,270,270,270,338,338,338,338,338,338,338,338,338,338,270,270,270,270,270,292,292,292,292,292,315,315,315,315,315,270,270,270</value>
+		<unit><![CDATA[&deg;]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Comma separated list of recent wind bearing readings</description>
+	</item>
+	<item name="wspddata">
+		<value>0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,1.4,1.4,1.4,1.4,1.4,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,0.6,0.6,0.6,0.6,0.6,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,0.0,0.0,0.0,0.0,0.0,1.4,1.4,1.4,1.4,1.4,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,2.7,2.7,2.7,2.7,2.7,1.9,1.9,1.9,1.9,1.9,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,1.9,1.9,1.9,1.9,1.9,1.4,1.4,1.4,1.4,1.4,1.9,1.9,1.9,1.9,1.9,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,0.6,0.6,0.6,0.6,0.6,1.4,1.4,1.4,1.4,1.4,0.6,0.6,0.6,0.6,0.6,0.6,0.6,2.7,2.7,2.7,2.7,2.7,2.7,2.7,2.7,2.7,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,1.4,1.4,1.4,1.4,1.4,0.6,0.6,0.6,0.6,0.6,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,1.9,1.9,1.9,1.9,1.9,0.6,0.6,0.6,0.6,0.6,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,2.7,2.7,2.7,2.7,2.7,2.7,2.7,2.7,2.7,2.7,0.6,0.6,0.6,0.6,1.9,1.9,1.9,1.9,1.9,1.9,1.9,1.9,1.9,1.4,1.4,1.4,1.4,1.4,1.9,1.9,1.9,1.9,1.9,1.9,1.9,1.9,1.9,1.9,1.9,1.9,1.9,1.9,1.9,1.9,1.9,1.9,1.9,1.4,1.4,1.4,1.4,1.4,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,1.9,1.9,1.9,1.9,1.9,3.3,3.3,3.3,3.3,3.3,2.7,2.7,2.7,2.7,2.7,1.9,1.9,1.9,1.9,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,2.7,2.7,2.7,2.7,2.7,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,1.9,1.9,1.9,1.9,1.9,1.9,1.9,1.9,1.9,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,1.4,1.4,1.4,1.4,1.4,1.9,1.9,1.9,1.9,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,0.6,0.6,0.6,0.6,0.6,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.9,1.9,1.9,1.9,1.9,1.4,1.4,1.4,1.4,1.9,1.9,1.9,1.9,1.9,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,3.3,3.3,3.3,3.3,3.3,1.9,1.9,1.9,1.9,1.9,1.9,1.9,1.9,1.9,1.9,1.4,1.4,1.4,1.4,3.9,3.9,3.9,3.9,3.9,0.6,0.6,0.6,0.6,0.6,1.9,1.9,1.9,1.9,1.9,1.9,1.9,1.9,1.9,1.9,1.9,1.9,1.9,1.9,1.9,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.9,1.9,1.9,1.9,1.9,1.4,1.4,1.4,1.4,1.4,1.9,1.9,1.9,1.9,1.9,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.9,1.9,1.9,1.9,1.9,2.7,2.7,2.7,2.7,2.7,1.9,1.9,1.9,1.9,3.9,3.9,3.9,3.9,3.9,2.7,2.7,2.7,2.7,2.7,1.9,1.9,1.9,1.9,1.9,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.9,1.9,1.9,1.9,3.9,3.9,3.9,3.9,3.9,1.9,1.9,1.9,1.9,1.9,1.9,1.9,1.9,1.9,1.9,2.7,2.7,2.7,2.7,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.9,1.9,1.9,1.9,1.9,0.6,0.6,0.6,0.6,0.6,1.9,1.9,1.9,1.9,1.4,1.4,1.4,1.4,2.7,2.7,2.7,2.7,2.7,1.4,1.4,1.4,1.4,1.4,2.7,2.7,2.7,2.7,2.7,1.4,1.4,1.4,1.4,1.4,1.9,1.9,1.9,1.9,2.7,2.7,2.7,2.7,2.7,1.9,1.9,1.9,1.9,1.9,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.9,1.9,1.9,1.9,1.9,1.4,1.4,1.4,1.4,1.4,2.7,2.7,2.7,2.7,2.7,2.7,2.7,2.7,2.7,1.9,1.9,1.9,1.9,1.9,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,2.7,2.7,2.7,2.7,3.3,3.3,3.3,3.3,3.3,1.9,1.9,1.9,1.9,1.9,1.9,1.9,1.9,1.9,1.9,2.7,2.7,2.7,2.7,2.7,2.7,2.7,2.7,2.7,1.4,1.4,1.4,1.4,1.4,0.6,0.6,0.6,0.6,0.6,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.9,1.9,1.9,1.9,3.3,3.3,3.3,3.3,3.3,2.7,2.7,2.7,2.7,2.7,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.4,1.9,1.9,1.9,1.9,1.9,3.9,3.9,3.9,3.9,2.7,2.7,2.7,2.7,2.7,3.9,3.9,3.9,3.9,3.9,5.2,5.2,5.2,5.2,3.3,3.3,3.3,3.3,3.3,2.7,2.7,2.7,2.7,2.7,2.7,2.7,2.7,2.7,2.7,3.3,3.3,3.3,3.3,3.3,2.7,2.7,2.7,2.7,1.9,1.9,1.9,1.9,1.9,3.3,3.3,3.3,3.3,3.3,2.7,2.7,2.7,2.7,2.7,2.7,2.7,2.7,2.7,2.7,2.7,2.7,2.7,2.7,3.3,3.3,3.3,3.3,3.3,1.9,1.9,1.9,1.9,1.9,4.7,4.7,4.7,4.7,4.7,3.3,3.3,3.3,3.3,3.3,2.7,2.7,2.7,2.7,4.7,4.7,4.7,4.7,4.7,3.9,3.9,3.9,3.9,3.9,3.9,3.9,3.9,3.9,3.9,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,2.7,2.7,2.7,2.7,2.7,3.9,3.9,3.9,3.9,1.4,1.4,1.4,1.4,1.4,3.9,3.9,3.9,3.9,3.9,3.9,3.9,3.9,3.9,3.9,3.9,3.9,3.9,3.9,5.2,5.2,5.2,5.2,6.0,6.0,6.0,6.0,6.0,2.7,2.7,2.7,2.7,2.7,3.3,3.3,3.3,3.3,3.3,3.9,3.9,3.9,3.9,3.3,3.3,3.3,3.3,3.3,2.7,2.7,2.7,2.7,2.7,2.7,2.7,2.7,2.7,2.7,4.7,4.7,4.7,4.7,4.7,3.9,3.9,3.9,3.9,3.3,3.3,3.3,3.3,3.3,2.7,2.7,2.7,2.7,2.7,1.9,1.9,1.9,1.9,1.9,1.9,1.9,1.9,1.9,1.9,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,1.9,1.9,1.9,1.9,1.9,2.7,2.7,2.7,2.7,2.7,2.7,2.7,2.7,2.7,1.9,1.9,1.9,1.9,1.9,1.4,1.4,1.4,1.4,1.4,2.7,2.7,2.7,2.7,2.7,3.9,3.9,3.9,3.9,3.9,2.7,2.7,2.7,2.7,1.9,1.9,1.9,1.9,1.9,3.9,3.9,3.9,3.9,3.9,3.3,3.3,3.3,3.3,3.3,2.7,2.7,2.7,2.7,2.7,3.9,3.9,3.9,3.9,2.7,2.7,2.7,2.7,2.7,3.3,3.3,3.3,3.3,3.3,1.9,1.9,1.9,1.9,1.9,2.7,2.7,2.7,2.7,2.7,1.9,1.9,1.9,1.9,1.4,1.4,1.4,1.4,1.4,2.7,2.7,2.7,2.7,3.9,3.9,3.9,3.9,3.9,3.9,3.9,3.9,3.9,3.9,2.7,2.7,2.7,2.7,1.4,1.4,1.4,1.4,1.4,1.9,1.9,1.9,1.9,1.9,1.4,1.4,1.4,1.4,1.4,2.7,2.7,2.7,2.7,1.4,1.4,1.4,1.4,1.4,2.7,2.7,2.7,2.7,2.7,6.0,6.0,6.0,6.0,6.0,3.3,3.3,3.3,3.3,3.3,2.7,2.7,2.7,2.7,3.3,3.3,3.3,3.3,3.3,3.9,3.9,3.9,3.9,3.9,6.0,6.0,6.0,6.0,6.0,5.2,5.2,5.2,5.2,5.2,4.7,4.7,4.7,4.7,4.7,5.2,5.2,5.2,5.2,3.9,3.9,3.9,3.9,3.9,2.7,2.7,2.7,2.7,2.7,2.7,2.7,2.7,2.7,2.7,1.9,1.9,1.9,1.9,1.9,2.7,2.7,2.7,2.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,3.9,3.9,3.9,3.9,1.9,1.9,1.9,1.9,1.9,3.9,3.9,3.9,3.9,3.9,3.3,3.3,3.3,3.3,3.3,2.7,2.7,2.7,2.7,2.7,5.2,5.2,5.2,5.2,5.2,2.7,2.7,2.7,2.7,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.9,3.9,3.9,3.9,3.9,3.9,3.9,3.9,3.9,3.9,3.9,3.9,3.9,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.9,3.9,3.9,3.9,3.9,6.6,6.6,6.6,6.6,6.6,3.3,3.3,3.3,3.3,3.9,3.9,3.9,3.9,3.9,3.3,3.3,3.3,3.3,3.3,6.6,6.6,6.6,6.6,6.6,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,8.6,8.6,8.6,8.6,8.6,4.7,4.7,4.7,4.7,4.7,3.9,3.9,3.9,3.9,3.9,3.3,3.3,3.3,3.3,3.3,2.7,2.7,2.7,2.7,1.4,1.4,1.4,1.4,1.4,3.3,3.3,3.3,3.3,3.3,6.0,6.0,6.0,6.0,6.0,2.7,2.7,2.7,2.7,2.7,8.0,8.0,8.0,8.0,5.2,5.2,5.2,5.2,5.2,4.7,4.7,4.7,4.7,4.7,2.7,2.7,2.7,2.7,2.7,3.3,3.3,3.3,3.3,3.3,2.7,2.7,2.7,2.7,1.9,1.9,1.9,1.9,1.9,2.7,2.7,2.7,2.7,2.7,1.9,1.9,1.9,1.9,1.9,3.3,3.3,3.3,3.3,3.3,4.7,4.7,4.7,4.7,2.7,2.7,2.7,2.7,2.7,3.3,3.3,3.3,3.3,3.3,3.9,3.9,3.9,3.9,3.9,3.3,3.3,3.3,3.3,3.3,2.7,2.7,2.7,2.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,3.3,3.3,3.3,3.3,3.3,3.9,3.9,3.9,3.9,2.7,2.7,2.7,2.7,2.7,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.9,3.9,3.9,3.9,3.9,2.7,2.7,2.7,2.7,6.6,6.6,6.6,6.6,6.6,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,6.0,6.0,6.0,6.0,6.0,3.9,3.9,3.9,3.9,3.9,6.6,6.6,6.6,6.6,6.0,6.0,6.0,6.0,6.0,6.6,6.6,6.6,6.6,6.6,3.9,3.9,3.9,3.9,3.9,3.9,3.9,3.9,3.9,3.9,3.3,3.3,3.3,3.3,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.9,3.9,3.9,3.9,3.9,3.9,3.9,3.9,3.9,3.9,3.3,3.3,3.3,3.3,7.2,7.2,7.2,7.2,7.2,3.9,3.9,3.9,3.9,3.9,4.7,4.7,4.7,4.7,3.9,3.9,3.9,3.9,3.9,3.3,3.3,3.3,3.3,2.7,2.7,2.7,2.7,2.7,6.6,6.6,6.6,6.6,6.6,4.7,4.7,4.7,4.7,4.7,3.9,3.9,3.9,3.9,3.9,9.3,9.3,9.3,9.3,4.7,4.7,4.7,4.7,4.7,6.6,6.6,6.6,6.6,6.6,6.6,6.6,6.6,6.6,6.6,6.0,6.0,6.0,6.0,6.0,3.9,3.9,3.9,3.9,6.0,6.0,6.0,6.0,6.0,4.7,4.7,4.7,4.7,4.7,1.9,1.9,1.9,1.9,1.9,6.0,6.0,6.0,6.0,6.0,3.3,3.3,3.3,3.3,6.6,6.6,6.6,6.6,6.6,6.0,6.0,6.0,6.0,6.0,4.7,4.7,4.7,4.7,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.9,3.9,3.9,3.9,3.9,4.7,4.7,4.7,4.7,4.7,6.0,6.0,6.0,6.0,6.0,3.3,3.3,3.3,3.3,3.9,3.9,3.9,3.9,3.9,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,3.9,3.9,3.9,3.9,3.9,5.2,5.2,5.2,5.2,3.9,3.9,3.9,3.9,3.9,3.9,3.9,3.9,3.9,3.9,2.7,2.7,2.7,2.7,2.7,4.7,4.7,4.7,4.7,4.7,6.0,6.0,6.0,6.0,3.9,3.9,3.9,3.9,9.9,9.9,9.9,9.9,9.9,6.6,6.6,6.6,6.6,6.6,6.6,6.6,6.6,6.6,6.6,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,3.9,3.9,3.9,3.9,3.9,4.7,4.7,4.7,4.7,3.9,3.9,3.9,3.9,3.9,3.9,5.2,5.2,5.2,5.2,6.6,6.6,6.6,6.6,6.6,3.9,3.9,3.9,3.9,3.9,6.0,6.0,6.0,6.0,6.0,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,3.9,3.9,3.9,3.9,3.9,3.3,3.3,3.3,3.3,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,3.9,3.9,3.9,3.9,3.9,2.7,2.7,2.7,2.7,2.7,7.2,7.2,7.2,7.2,3.3,3.3,3.3,3.3,3.3,3.9,3.9,3.9,3.9,3.9,5.2,5.2,5.2,5.2,5.2,6.0,6.0,6.0,6.0,6.0,3.3,3.3,3.3,3.3,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,3.9,3.9,3.9,3.9,3.9,4.7,4.7,4.7,4.7,7.2,7.2,7.2,7.2,7.2,6.0,6.0,6.0,6.0,6.0,3.3,3.3,3.3,3.3,5.2,5.2,5.2,5.2,5.2,3.9,3.9,3.9,3.9,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,3.9,3.9,3.9,3.9,3.9,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,3.9,3.9,3.9,3.9,3.9,7.2,7.2,7.2,7.2,7.2,4.7,4.7,4.7,4.7,4.7,3.3,3.3,3.3,3.3,3.3,5.2,5.2,5.2,5.2,4.7,4.7,4.7,4.7,4.7,9.3,9.3,9.3,9.3,9.3,5.2,5.2,5.2,5.2,5.2,6.6,6.6,6.6,6.6,6.6,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,8.6,8.6,8.6,8.6,8.6,3.9,3.9,3.9,3.9,3.9,6.0,6.0,6.0,6.0,6.0,4.7,4.7,4.7,4.7,6.0,6.0,6.0,6.0,6.0,7.2,7.2,7.2,7.2,7.2,7.2,7.2,7.2,7.2,4.7,4.7,4.7,4.7,4.7,4.7,6.0,6.0,6.0,6.0,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,6.0,6.0,6.0,6.0,4.7,4.7,4.7,4.7,4.7,4.7,6.0,6.0,6.0,6.0,4.7,4.7,4.7,4.7,4.7,5.2,5.2,5.2,5.2,5.2,9.9,9.9,9.9,9.9,7.2,7.2,7.2,7.2,7.2,7.2,6.6,6.6,6.6,6.6,7.2,7.2,7.2,7.2,3.9,3.9,3.9,3.9,3.9,3.9,3.9,3.9,3.9,3.9,6.0,6.0,6.0,6.0,6.0,5.2,5.2,5.2,5.2,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,3.9,3.9,3.9,3.9,3.9,4.7,4.7,4.7,4.7,4.7,5.2,5.2,5.2,5.2,4.7,4.7,4.7,4.7,4.7,6.6,6.6,6.6,6.6,6.6,5.2,5.2,5.2,5.2,5.2,3.3,3.3,3.3,3.3,3.3,3.9,3.9,3.9,3.9,8.0,8.0,8.0,8.0,8.0,7.2,7.2,7.2,7.2,7.2,5.2,5.2,5.2,5.2,5.2,8.0,8.0,8.0,8.0,8.0,3.9,3.9,3.9,3.9,8.0,8.0,8.0,8.0,8.0,7.2,7.2,7.2,7.2,7.2,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,3.9,3.9,3.9,3.9,3.9,4.7,4.7,4.7,4.7,4.7,7.2,7.2,7.2,7.2,7.2,7.2,7.2,7.2,7.2,7.2,8.0,8.0,8.0,8.0,6.0,6.0,6.0,6.0,6.0,3.3,3.3,3.3,3.3,3.3,3.9,3.9,3.9,3.9,7.2,7.2,7.2,7.2,7.2,11.3,11.3,11.3,11.3,3.9,3.9,3.9,3.9,3.9,4.7,4.7,4.7,4.7,4.7,5.2,5.2,5.2,5.2,5.2,2.7,2.7,2.7,2.7,2.7,3.9,3.9,3.9,3.9,6.6,6.6,6.6,6.6,6.6,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,6.6,6.6,6.6,6.6,5.2,5.2,5.2,5.2,5.2,6.0,6.0,6.0,6.0,6.0,3.3,3.3,3.3,3.3,3.3,3.9,3.9,3.9,3.9,3.9,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,3.3,3.3,3.3,3.3,3.3,4.7,4.7,4.7,4.7,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,6.0,6.0,6.0,6.0,6.0,5.2,5.2,5.2,5.2,5.2,4.7,4.7,4.7,4.7,8.0,8.0,8.0,8.0,8.0,8.0,3.9,3.9,3.9,3.9,6.0,6.0,6.0,6.0,6.0,3.9,3.9,3.9,3.9,3.9,4.7,4.7,4.7,4.7,8.6,8.6,8.6,8.6,8.6,8.6,10.5,10.5,10.5,10.5,8.6,8.6,8.6,8.6,8.6,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,8.0,8.0,8.0,8.0,8.0,8.0,3.9,3.9,3.9,3.9,3.3,3.3,3.3,3.3,3.9,3.9,3.9,3.9,3.9,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.9,3.9,3.9,3.9,3.3,3.3,3.3,3.3,3.3,3.9,3.9,3.9,3.9,3.9,3.3,3.3,3.3,3.3,3.3,1.9,1.9,1.9,1.9,1.9,6.0,6.0,6.0,6.0,8.6,8.6,8.6,8.6,8.6,6.0,6.0,6.0,6.0,6.0,5.2,5.2,5.2,5.2,5.2,3.3,3.3,3.3,3.3,3.3,6.6,6.6,6.6,6.6,3.9,3.9,3.9,3.9,3.9,4.7,4.7,4.7,4.7,4.7,5.2,5.2,5.2,5.2,5.2,6.6,6.6,6.6,6.6,6.6,6.6,6.6,6.6,6.6,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,4.7,6.0,6.0,6.0,6.0,3.9,3.9,3.9,3.9,3.9,3.9,4.7,4.7,4.7,4.7,5.2,5.2,5.2,5.2,5.2,4.7,4.7,4.7,4.7,4.7,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.3,3.9,3.9,3.9,3.9,3.9,3.9,3.9,3.9,3.9,5.2,5.2,5.2,5.2,5.2,7.2,7.2,7.2,7.2,7.2,6.6,6.6,6.6</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Comma separated list of recent wind speed readings</description>
+	</item>
+	<item name="nextwindindex">
+		<value>2833</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>The index of the entries in wdirdata and wspddata which Cumulus is going to use next - i.e. the latest entry used is one less than this; but don't forget to allow for the wrap around! </description>
+	</item>
+	<item name="windrun">
+		<value>15,1</value>
+		<unit><![CDATA[&nbsp;nm]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>The total wind run today so far</description>
+	</item>
+	<item name="windrunY">
+		<value>0,2</value>
+		<unit><![CDATA[&nbsp;nm]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>The total wind run for yesterday</description>
+	</item>
+	<item name="bearingTM">
+		<value>315</value>
+		<unit><![CDATA[&deg;]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Today's mean wind bearing</description>
+	</item>
+	<item name="bearingYM">
+		<value>45</value>
+		<unit><![CDATA[&deg;]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Yesterday's mean wind bearing</description>
+	</item>
+	<item name="windTM">
+		<value>6,0</value>
+		<unit><![CDATA[&nbsp;kts]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Today's maximum wind speed</description>
+	</item>
+	<item name="windYM">
+		<value>0,7</value>
+		<unit><![CDATA[&nbsp;kts]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Yesterday's maximum wind speed</description>
+	</item>
+	<item name="wgustTM">
+		<value>11,3</value>
+		<unit><![CDATA[&nbsp;kts]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Today's maximum wind gust</description>
+	</item>
+	<item name="wgustYM">
+		<value>1,4</value>
+		<unit><![CDATA[&nbsp;kts]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Yesterday's maximum wind gust</description>
+	</item>
+	<item name="gustM">
+		<value>11,3</value>
+		<unit><![CDATA[&nbsp;kts]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>All time high wind gust</description>
+	</item>
+	<item name="wspeedH">
+		<value>6,0</value>
+		<unit><![CDATA[&nbsp;kts]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>All time high average wind speed</description>
+	</item>
+	<item name="wchillH">
+		<value>12,1</value>
+		<unit><![CDATA[&deg;C]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>All time greatest wind chill</description>
+	</item>
+	<item name="windunit">
+		<value><![CDATA[kts]]></value>
+		<unit></unit>
+		<image></image>
+		<class>unit</class>
+		<description>Wind Unit</description>
+	</item>
+	<item name="windrununit">
+		<value><![CDATA[nm]]></value>
+		<unit></unit>
+		<image></image>
+		<class>unit</class>
+		<description>Wind Run Unit</description>
+	</item>
+	<item name="beaufort">
+		<value>F2</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>The wind speed on the Beaufort scale</description>
+	</item>
+	<item name="beaudesc">
+		<value>Light breeze</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>The wind speed Beaufort description</description>
+	</item>
+	<item name="Tbeaufort">
+		<value>F2</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Today's maximum Beaufort</description>
+	</item>
+	<item name="Ybeaufort">
+		<value>F2</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Yesterday's maximum Beaufort</description>
+	</item>
+</windtags>
+<miscellaneoustags>
+	<item name="version">
+		<value>1.9.4</value>
+		<unit></unit>
+		<image></image>
+		<description>The version of Cumulus in use</description>
+		<class>static</class>
+	</item>
+	<item name="build">
+		<value>1099</value>
+		<unit></unit>
+		<image></image>
+		<class>static</class>
+		<description>The build of Cumulus in use</description>
+	</item>
+	<item name="interval">
+		<value>1</value>
+		<unit><![CDATA[&nbsp;minutes]]></unit>
+		<image></image>
+		<class>static</class>
+		<description>The web site update interval in minutes</description>
+	</item>
+	<item name="update">
+		<value>16.06.2016 15:08:40</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>The date and time of the last web site update</description>
+	</item>
+	<item name="stationtype">
+		<value>Fine Offset</value>
+		<unit></unit>
+		<image></image>
+		<class>static</class>
+		<description>The type of station in use</description>
+	</item>
+	<item name="latitude">
+		<value><![CDATA[N&nbsp;00&deg;&nbsp;00&#39;&nbsp;00&quot;]]></value>
+		<unit></unit>
+		<image></image>
+		<class>static</class>
+		<description>The station latitude</description>
+	</item>
+	<item name="longitude">
+		<value><![CDATA[E&nbsp;00&deg;&nbsp;00&#39;&nbsp;00&quot;]]></value>
+		<unit></unit>
+		<image></image>
+		<class>static</class>
+		<description>The station longitude</description>
+	</item>
+	<item name="altitude">
+		<value><![CDATA[0&nbsp;ft]]></value>
+		<unit></unit>
+		<image></image>
+		<class>static</class>
+		<description>The station altitude</description>
+	</item>
+	<item name="location">
+		<value>Kadyny Live TEST</value>
+		<unit></unit>
+		<image></image>
+		<class>static</class>
+		<description>The station location</description>
+	</item>
+	<item name="longlocation">
+		<value>Stacja testowa dla spotu KADYNY</value>
+		<unit></unit>
+		<image></image>
+		<class>static</class>
+		<description>Longer description of the station location</description>
+	</item>
+	<item name="forum">
+		<value><![CDATA[:<a href="http://sandaysoft.com/forum/">forum</a>:]]></value>
+		<unit></unit>
+		<image></image>
+		<class>static</class>
+		<description>URL of the forum</description>
+	</item>
+	<item name="webcam">
+		<value><![CDATA[]]></value>
+		<unit></unit>
+		<image></image>
+		<class>static</class>
+		<description>URL of the webcam</description>
+	</item>
+	<item name="graphperiod">
+		<value>12</value>
+		<unit></unit>
+		<image></image>
+		<class>static</class>
+		<description>The number of hours displayed by the graphs</description>
+	</item>
+	<item name="forecast">
+		<value>Fairly fine, showers likely</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>The current forecast</description>
+	</item>
+	<item name="forecastnumber">
+		<value>11</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>The number realating to the current forecast entry in the strings.ini file</description>
+	</item>
+	<item name="battery">
+		<value></value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>The console battery condition. Davis only.</description>
+	</item>
+	<item name="txbattery">
+		<value></value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>The transmitter battery condition. Davis only.</description>
+	</item>
+	<item name="cloudbase">
+		<value>5969 ft</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Calculated cloud base</description>
+	</item>
+	<item name="ET">
+		<value>0,00</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Today's evapotranspiration</description>
+	</item>
+	<item name="UV">
+		<value>0</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Current UV index</description>
+	</item>
+	<item name="SolarRad">
+		<value>0</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Current solar radiation</description>
+	</item>
+	<item name="sensorcontactlost">
+		<value></value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>1 if the station has lost contact with its remore sensors. Fine Offset only.</description>
+	</item>
+	<item name="snowdepth">
+		<value>0</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Today's Snow Depth as entered manually in the Weather Diary. Normally in centimeters. Output is purely as a numeric figure i.e. 10</description>
+	</item>
+</miscellaneoustags>
+<astronomicaltags>
+	<item name="sunrise">
+		<value>07:57</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Current sunrise time at the station</description>
+	</item>
+	<item name="sunset">
+		<value>20:04</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Current sunset time at the station</description>
+	</item>
+	<item name="daylength">
+		<value>12:07</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Length of day</description>
+	</item>
+	<item name="tomorowdaylength">
+		<value>There will be 0min 0s more daylight tomorrow</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>A string giving the difference between the length of day today and tomorrow</description>
+	</item>
+	<item name="dawn">
+		<value>07:35</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Time of dawn</description>
+	</item>
+	<item name="dusk">
+		<value>20:27</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Time of dusk</description>
+	</item>
+	<item name="daylightlength">
+		<value>12:52</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Length of daylight</description>
+	</item>
+	<item name="moonphase">
+		<value>Waxing Gibbous</value>
+		<unit></unit>
+		<image>images/moon.bmp</image>
+		<class>dynamic</class>
+		<description>Current phase of the moon</description>
+	</item>
+	<item name="moonrise">
+		<value>17:02</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Current moonrise time at the station</description>
+	</item>
+	<item name="moonset">
+		<value>04:40</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Current moonset time at the station</description>
+	</item>
+	<item name="isdaylight">
+		<value>1</value>
+		<unit></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>A flag to indicate if the location for the station is in daylight or not, based on the dawn and dusk times. Possible values are 0 or 1, where 1 notes that it is currently within the hours of daylight. (new to Version 1.8.8 build 872, currently in public beta testing phase)</description>
+	</item>
+</astronomicaltags>
+<WMR928tags>
+	<item name="ExtraTemp1">
+		<value>0,0</value>
+		<unit><![CDATA[&deg;C]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description></description>
+	</item>
+	<item name="ExtraTemp2">
+		<value>0,0</value>
+		<unit><![CDATA[&deg;C]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description></description>
+	</item>
+	<item name="ExtraTemp3">
+		<value>0,0</value>
+		<unit><![CDATA[&deg;C]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description></description>
+	</item>
+	<item name="ExtraDP1">
+		<value>0,0</value>
+		<unit><![CDATA[&deg;C]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description></description>
+	</item>
+	<item name="ExtraDP2">
+		<value>0,0</value>
+		<unit><![CDATA[&deg;C]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description></description>
+	</item>
+	<item name="ExtraDP3">
+		<value>0,0</value>
+		<unit><![CDATA[&deg;C]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description></description>
+	</item>
+	<item name="ExtraHum1">
+		<value>0</value>
+		<unit>%</unit>
+		<image></image>
+		<class>dynamic</class>
+		<description></description>
+	</item>
+	<item name="ExtraHum2">
+		<value>0</value>
+		<unit>%</unit>
+		<image></image>
+		<class>dynamic</class>
+		<description></description>
+	</item>
+	<item name="ExtraHum2">
+		<value>0</value>
+		<unit>%</unit>
+		<image></image>
+		<class>dynamic</class>
+		<description></description>
+	</item>
+</WMR928tags>
+<nocommatags>
+	<item name="RCdew">
+		<value>11.1</value>
+		<unit><![CDATA[&deg;C]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Recent Dew Point</description>
+	</item>
+	<item name="RCheatindex">
+		<value>25.7</value>
+		<unit><![CDATA[&deg;C]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Recent Heat Index</description>
+	</item>
+	<item name="RChum">
+		<value>40</value>
+		<unit>%</unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Recent outside humidity</description>
+	</item>
+	<item name="RCinhum">
+		<value>55</value>
+		<unit>%</unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Recent inside humidity</description>
+	</item>
+	<item name="RCintemp">
+		<value>21.9</value>
+		<unit><![CDATA[&deg;C]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Recent inside temperature</description>
+	</item>
+	<item name="RCpress">
+		<value>1017.1</value>
+		<unit><![CDATA[&nbsp;hPa]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Recent pressure</description>
+	</item>
+	<item name="RCpressTH">
+		<value>1017.4</value>
+		<unit><![CDATA[&nbsp;hPa]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Recent high pressure</description>
+	</item>
+	<item name="RCpressTL">
+		<value>1013.5</value>
+		<unit><![CDATA[&nbsp;hPa]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Recent low pressure</description>
+	</item>
+	<item name="RCrfall">
+		<value>1.8</value>
+		<unit><![CDATA[&nbsp;mm]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Recent rainfall</description>
+	</item>
+	<item name="RCrrate">
+		<value>0.0</value>
+		<unit><![CDATA[&nbsp;mm/hr]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Recent rainfall rate</description>
+	</item>
+	<item name="RCrrateTM">
+		<value>18.0</value>
+		<unit><![CDATA[&nbsp;mm/hr]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Recent high rainfall rate</description>
+	</item>
+	<item name="RCtemp">
+		<value>25.7</value>
+		<unit><![CDATA[&deg;C]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Recent outside temperature</description>
+	</item>
+	<item name="RCtempTH">
+		<value>25.8</value>
+		<unit><![CDATA[&deg;C]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Recent outside high temperature</description>
+	</item>
+	<item name="RCtempTL">
+		<value>12.1</value>
+		<unit><![CDATA[&deg;C]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Recent outside low temperature</description>
+	</item>
+	<item name="RCwchill">
+		<value>25.7</value>
+		<unit><![CDATA[&deg;C]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Recent wind chill</description>
+	</item>
+	<item name="RCwgust">
+		<value>7.2</value>
+		<unit><![CDATA[&nbsp;kts]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Recent wind gust</description>
+	</item>
+	<item name="RCwgustTM">
+		<value>11.3</value>
+		<unit><![CDATA[&nbsp;kts]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Recent high wind gust</description>
+	</item>
+	<item name="RCwspeed">
+		<value>3.9</value>
+		<unit><![CDATA[&nbsp;kts]]></unit>
+		<image></image>
+		<class>dynamic</class>
+		<description>Recent wind speed</description>
+	</item>
+</nocommatags>
+</weatherdata>
