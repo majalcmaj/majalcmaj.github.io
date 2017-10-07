@@ -1,15 +1,19 @@
 "use strict";
-define(["d3"], function(d3) {
+define(["d3"], function (d3) {
     const MAP_DIMENSION = 250;
-    const BASE_LINE_LENGTH = 20;
-    const MIN_LINES_COUNT = 20;
-    const MAX_LINES_COUNT = 40;
-    const D_DELAY = 300;
+    const HALF_MAP_DIMENSION = MAP_DIMENSION / 2;
+    const MIN_LINE_LENGTH = 20;
+    const MAX_LINE_LENGTH = 60;
+    const MIN_LINES_COUNT = 15;
+    const MAX_LINES_COUNT = 30;
+    const D_DELAY = 500;
     const DELAY_BASE = 1000;
     const MAX_STRENGTH = 30;
+    const OPACITY = 0.5;
+    const STROKE_WIDTH = 4;
+    const BORDER_THICKNESS = 18;
 
-
-    var colors = [
+    const COLORS_PALETTE = [
         "#00fffb",
         "#00ffc5",
         "#00ff8e",
@@ -28,70 +32,68 @@ define(["d3"], function(d3) {
 
     function mapStrengthToColor(strength) {
         if (strength >= MAX_STRENGTH) {
-            return colors[colors.length - 1];
+            return COLORS_PALETTE[COLORS_PALETTE.length - 1];
         } else {
-            return colors[Math.floor(strength * colors.length / MAX_STRENGTH)];
+            return COLORS_PALETTE[Math.floor(strength * COLORS_PALETTE.length / MAX_STRENGTH)];
         }
     }
 
-    function lineAnimate(selection) {
+    function lineAnimate(selection, color, strength) {
         selection
-            .attr('x1', function (d) {
-                return d.x1;
+            .each(function (d) {
+                var elem = this;
+                elem.setAttribute('x1', d.x - d.dx / 2);
+                elem.setAttribute('x2', d.x - d.dx / 2);
+                elem.setAttribute('y1', d.y - d.dy / 2);
+                elem.setAttribute('y2', d.y - d.dy / 2);
             })
-            .attr('x2', function (d) {
-                return d.x1;
-            })
-            .attr('y1', function (d) {
-                return d.y1;
-            })
-            .attr('y2', function (d) {
-                return d.y1;
-            })
-            .style('opacity', 0.25)
-            .style('stroke', function (d) {
-                return mapStrengthToColor(d.strength)
-            })
+            .style('opacity', OPACITY)
+            .style('stroke', color)
             .transition()
             .ease('linear')
             .duration(function (d) {
-                return d.delay;
+                return d.duration
             })
-            .delay(30)
+            .delay(function (d) {
+                return d.duration
+            })
             .attr('x2', function (d) {
-                return d.x2;
+                return d.x + d.dx
             })
             .attr('y2', function (d) {
-                return d.y2;
+                return d.y + d.dy;
             })
             .transition()
             .duration(function (d) {
-                return d.delay;
+                return d.duration
             })
             .style('opacity', 0)
-            .each('end', function () {
-                d3.select(this).call(lineAnimate)
+            .each('end', function (d) {
+                const data = getRandomCoords(strength, d.dx, d.dy);
+                const element = d3.select(this);
+                element[0][0].__data__ = data;
+                element.call(lineAnimate, color, strength);
             });
     }
 
-    function paint(data) {
-        const svg = d3.select('svg');
+    function paint(linesPlaceholder, coords, strength, dx, dy) {
 
-        svg.append("image")
-            .attr("width", MAP_DIMENSION + "px")
-            .attr("height", MAP_DIMENSION + "px")
-            .attr("xlink:href", "images/kadyny_map.png");
+        const color = mapStrengthToColor(strength);
 
-        svg.selectAll('line')
-            .data(data)
+        linesPlaceholder.selectAll('line')
+            .data(coords)
             .enter()
             .append('line')
-            .style({'stroke-width': '3px'})
-            .call(lineAnimate);
+            .style({'stroke-width': STROKE_WIDTH + 'px'})
+            .call(lineAnimate, color, strength);
     }
 
     function calcLinesCount(strength) {
         return MIN_LINES_COUNT + Math.round(strength * MAX_LINES_COUNT / MAX_STRENGTH);
+    }
+
+    function getRandomDuration() {
+        return Math.round(Math.random() * D_DELAY + DELAY_BASE);
     }
 
     function normalizeStrength(strength) {
@@ -105,51 +107,87 @@ define(["d3"], function(d3) {
     }
 
     function getRandomCoords(strength, dx, dy) {
-        const x1 = Math.floor(Math.random() * MAP_DIMENSION) - dx / 2;
-        const y1 = Math.floor(Math.random() * MAP_DIMENSION) - dy / 2;
+
+        const alpha = Math.random() * 2 * Math.PI;
+        const radius = Math.random() * (MAP_DIMENSION / 2 - BORDER_THICKNESS);
+
+        const x = radius * Math.cos(alpha) + MAP_DIMENSION / 2;
+        const y = radius * Math.sin(alpha) + MAP_DIMENSION / 2;
         return {
-            x1: x1,
-            x2: x1 + dx,
-            y1: y1,
-            y2: y1 + dy,
-            delay: Math.round(Math.random() * D_DELAY + DELAY_BASE),
-            strength: strength
+            x: x,
+            dx: dx,
+            y: y,
+            dy: dy,
+            duration: getRandomDuration()
         }
     }
 
-    function calculateDX(direction, strength) {
-        return Math.sin(direction) * BASE_LINE_LENGTH * strength;
-    }
-
-    function calculateDY(direction, strength) {
-        return -Math.cos(direction) * BASE_LINE_LENGTH * strength;
+    function calculateVector(direction, strength) {
+        const lineLength = (MAX_LINE_LENGTH - MIN_LINE_LENGTH) * ( strength / MAX_STRENGTH);
+        return {
+            x: Math.sin(direction) * (MIN_LINE_LENGTH + lineLength),
+            y: -Math.cos(direction) * (MIN_LINE_LENGTH + lineLength)
+        }
     }
 
     function generateDataFromWind(direction, strength) {
         strength = normalizeStrength(strength);
         direction = direction * Math.PI / 180.0;
         const linesCount = calcLinesCount(strength);
-        const dx = calculateDX(direction, strength);
-        const dy = calculateDY(direction, strength);
+        const vector = calculateVector(direction, strength);
 
         const coordinates = [];
 
         for (var i = 0; i < linesCount; i++) {
-            coordinates.push(getRandomCoords(strength, dx, dy));
+            coordinates.push(getRandomCoords(strength, vector.x, vector.y));
         }
 
         return coordinates;
     }
 
-    function showWind(direction, strength) {
-        var svgElem = document.querySelector("#wind-container > svg");
-        if (svgElem) {
-            svgElem.remove();
+    function createSvg(parent) {
+        const svgElement = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+        parent.appendChild(svgElement);
+
+        const svg = d3.select(svgElement);
+
+        const defs = svg.append("defs");
+
+
+        defs.append("clipPath")
+            .attr("id", "cut-off-gauge")
+            .append("circle")
+            .attr("cx", HALF_MAP_DIMENSION)
+            .attr("cy", HALF_MAP_DIMENSION)
+            .attr("r", HALF_MAP_DIMENSION - BORDER_THICKNESS);
+
+        defs.append("clipPath")
+            .attr("id", "cut-off-hole")
+            .append("rect")
+            .attr("x", 0)
+            .attr("y", 0)
+            .attr("width", MAP_DIMENSION)
+            .attr("height", MAP_DIMENSION)
+            .attr("clip-path", "url(#cut-off-gauge)");
+
+
+        svg.append("image")
+            .attr("width", 250)
+            .attr("height", 250)
+            .attr("xlink:href", "images/kadyny_map.png");
+
+        return svg.append("g")
+            .attr("clip-path", "url(#cut-off-hole)");
+    }
+
+    function showWind(windrosePlaceholder, direction, strength) {
+        while (windrosePlaceholder.firstChild) {
+            windrosePlaceholder.removeChild(windrosePlaceholder.firstChild);
         }
-        svgElem = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-        document.getElementById("wind-container").appendChild(svgElem);
+        const linesPlaceholder = createSvg(windrosePlaceholder);
+
         const coordinates = generateDataFromWind(direction, strength);
-        paint(coordinates);
+        paint(linesPlaceholder, coordinates, strength);
     }
 
     return {

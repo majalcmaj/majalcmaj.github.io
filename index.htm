@@ -205,7 +205,8 @@
         </td>
 
         <td>
-            <div id="wind-container"></div>
+            <div id="wind-container">
+            </div>
         </td>
         </tr>
         </table>
@@ -442,38 +443,6 @@
         <a href="mailto:buster.zack@gmail.com">buster.zack@gmail.com</a></span>
     </p>
 </div>
-
-<script>
-
-    require.config({
-        paths: {
-            d3: "./scripts/wind_gauge_new/d3.v3.min",
-            windGauge: "./scripts/wind_gauge_new/wind_gauge"
-        }
-    });
-
-    require(["windGauge"], function(windGauge){
-
-        const MAX_STRENGTH = windGauge.MAX_STRENGTH;
-        const showWind = windGauge.showWind;
-//        function processForm(e) {
-//            if (e.preventDefault) e.preventDefault();
-//            const strength = Number(e.target["strength"].value);
-//            const direction = Number(e.target["direction"].value);
-//            showWind(direction * Math.PI / 50, strength * MAX_STRENGTH / 100);
-//            return false;
-//        }
-//
-//        var form = document.getElementById('my-form');
-//        if (form.attachEvent) {
-//            form.attachEvent("submit", processForm);
-//        } else {
-//            form.addEventListener("submit", processForm);
-//        }
-
-        showWind(Math.PI / 2, 10);
-    });
-</script>
 
 </body>
 </html>

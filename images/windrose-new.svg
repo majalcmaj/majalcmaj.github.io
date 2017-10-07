@@ -1,0 +1,16 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="250px" height="250px">
+    <defs>
+
+        <clipPath id="cut-off-gauge">
+            <circle cx="125" cy="125" r="107"/>
+        </clipPath>
+
+        <clipPath id="cut-off-hole">
+            <rect x="0" y="0" width="250" height="250" clip-path="url(#cut-off-gauge)"/>
+        </clipPath>
+    </defs>
+    <image xlink:href="./kadyny_map.png" x="0" y="0" width="250" height="250"/>
+    <g id="windrose-wind-lines-placeholder" clip-path="url(#cut-off-hole)">
+    </g>
+</svg>
