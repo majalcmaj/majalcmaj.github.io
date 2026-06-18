@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
 <head>
-    <title>Stomatologia Ciesielscy</title>
+    <title>Kontakt — Stomatologia Ciesielscy</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="css/style.css" media="all"/>
+    <meta name="description" content="Dane kontaktowe i mapa dojazdu do gabinetu stomatologicznego Ciesielscy, ul. Kajki 2B, Lidzbark Warmiński.">
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
     <link rel="stylesheet" href="css/magnific-popup.css">
     <script src="scripts/jquery-3.4.1.min.js"></script>
     <script src="scripts/jquery.magnific-popup.min.js?v=1.1.0"></script>
@@ -11,38 +12,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<div id="strip"><br/></div>
+<a class="skip-link" href="#main-content">Przejdź do treści</a>
+<div id="strip"><br></div>
 <div id="main_container">
-    <div id="head_container">
-        <img id="logo" src="images/Logo.png" alt="logo"/>
-        <ul class="navigation_bar_list">
-            <li><a href="index.html">O nas</a></li>
-            <li><a href="godziny.html">Godziny przyjęć</a></li>
-            <li><a href="oferta.html">Oferta</a></li>
-            <li><a href="galeria.html">Galeria</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
-        <img id="title_img" src="images/title_img.png" alt="Obrazek"/>
-    </div>
-    <div id="content_container">
-        <br/>
-        <h2>Indywidualna Specjalistyczna Praktyka Lekarska <br/>Gabinety Dentystyczne <br/>Ewa i Marek Ciesielscy</h2>
+    <header id="head_container">
+        <img id="logo" src="images/Logo.png" alt="Logo gabinetu stomatologicznego Ewa i Marek Ciesielscy">
+        <nav aria-label="Główna nawigacja">
+            <ul class="navigation_bar_list">
+                <li><a href="index.html">O nas</a></li>
+                <li><a href="godziny.html">Godziny przyjęć</a></li>
+                <li><a href="oferta.html">Oferta</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+        <img id="title_img" src="images/title_img.png" alt="Stomatologia Ciesielscy — napis tytułowy">
+    </header>
+    <main id="main-content">
+        <br>
+        <h1>Indywidualna Specjalistyczna Praktyka Lekarska <br>Gabinety Dentystyczne <br>Ewa i Marek Ciesielscy</h1>
         <p class="contact">
             Rejestracja telefoniczna pod numerem (+48) 89 767 58 18
-            <br/><br/>
+            <br><br>
             ul. Kajki 2B, 11-100 Lidzbark Warmiński.
         </p>
         <div class="map">
             <iframe width="640" height="480" id="gmap_canvas"
-                    src="https://maps.google.com/maps?q=Marek%20Ciesielski%20Lidzbark%20Warmi%C5%84ski&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                    title="Mapa lokalizacji gabinetu przy ul. Kajki 2b"
+                    src="https://maps.google.com/maps?q=Marek%20Ciesielski%20Lidzbark%20Warmi%C5%84ski&t=&z=13&ie=UTF8&iwloc=&output=embed">
             </iframe>
         </div>
-    </div>
-    <div id="footer">
+    </main>
+    <footer id="footer">
         Gabinet Stomatologiczny Ewa i Marek Ciesielscy ul. Kajki 2b, Lidzbark Warmiński tel. (+48) 89 767 58 18
-    </div>
+    </footer>
 </div>
-</body>
 <script>openImplantsPopupOnWindowLoad()</script>
+</body>
 </html>

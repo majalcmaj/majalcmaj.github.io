@@ -25,6 +25,14 @@ function openImplantsPopup() {
             type: 'ajax',
             items: {src: IMPLANTS_POPUP_CONTENT},
             callbacks: {
+                ajaxContentAdded: function () {
+                    var dialog = this.content.attr('tabindex', '-1').get(0);
+                    // Magnific Popup re-focuses .mfp-wrap itself 16ms after open;
+                    // wait it out so our focus call is the one that sticks.
+                    setTimeout(function () {
+                        dialog.focus();
+                    }, 32);
+                },
                 close: savePopupWasOpen
             }
         });
