@@ -1,7 +1,7 @@
-<!-- plan-status: pending -->
+<!-- plan-status: done; commit=21eaa92; date=2026-06-18 -->
 # Phase 02 — responsive-layout
 
-> **Status:** ⬜ PENDING
+> **Status:** ✅ DONE — 21eaa92 (2026-06-18)
 
 Read `docs/modernize/prompt.md` first.
 
