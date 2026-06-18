@@ -4,7 +4,8 @@
   "scripts": {
     "test:html": "html-validate *.html",
     "test:a11y": "playwright test tests/a11y.spec.js",
-    "test": "npm run test:html && npm run test:a11y"
+    "test:responsive": "playwright test tests/responsive.spec.js",
+    "test": "npm run test:html && npm run test:a11y && npm run test:responsive"
   },
   "devDependencies": {
     "@axe-core/playwright": "^4.10.1",

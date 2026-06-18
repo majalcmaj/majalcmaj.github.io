@@ -33,7 +33,8 @@ body {
 #main_container {
     margin-left: auto;
     margin-right: auto;
-    width: 1000px;
+    max-width: 1000px;
+    width: 100%;
     min-height: 100%;
     background-color: #eeeeee;
     position: relative;
@@ -46,10 +47,12 @@ body {
 #head_container {
     overflow: hidden;
     position: relative;
-    width: 1000px;
-    height: 230px;
+    width: 100%;
+    min-height: 230px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     background-color: #2E6AF3;
-    display: block;
     -webkit-box-shadow: 0 6px 10px -2px #000000;
     -moz-box-shadow: 0 6px 10px -2px #000000;
     box-shadow: 0 6px 10px -2px #000000;
@@ -73,9 +76,11 @@ body {
 }
 
 #logo {
-    position: absolute;
-    top: -10px;
+    order: 1;
     display: block;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 h1, h2 {
@@ -98,21 +103,22 @@ h1, h2 {
     font-size: 18px;
 }
 
+#head_container nav {
+    order: 3;
+    flex-basis: 100%;
+}
+
 .navigation_bar_list {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    position: absolute;
-    bottom: 30px;
-}
-
-.navigation_bar_list li {
-    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .navigation_bar_list li a:link, .navigation_bar_list li a:visited {
-    position: relative;
+    box-sizing: border-box;
     display: block;
     width: 180px;
     font-weight: bold;
@@ -121,17 +127,28 @@ h1, h2 {
     text-align: center;
     padding: 10px;
     text-decoration: none;
-    z-index: 2;
 }
 
 .navigation_bar_list li a:hover {
     background-color: blue;
 }
 
+@media (max-width: 700px) {
+    .navigation_bar_list {
+        flex-direction: column;
+    }
+
+    .navigation_bar_list li a:link, .navigation_bar_list li a:visited {
+        width: 100%;
+    }
+}
+
 .razem {
     margin-left: auto;
     margin-right: auto;
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .contact {
@@ -149,9 +166,10 @@ h1, h2 {
 }
 
 #title_img {
-    position: absolute;
-    right: 0;
-    z-index: 1;
+    order: 2;
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .godziny, .oferta {
@@ -160,42 +178,49 @@ h1, h2 {
     font-size: 24px;
     font-weight: normal;
     text-align: left;
+    overflow-wrap: break-word;
 }
 
 p.oferta {
     margin-left: 20px;
 }
 
-#gallery_table {
-    margin-left: auto;
-    margin-right: auto;
+.gallery-grid {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
 }
 
-#gallery_table td {
-    width: 300px;
-}
-
-.gallery-thumb-offset-left {
-    position: relative;
-    left: 10px;
-}
-
-.gallery-thumb-offset-right {
-    position: relative;
-    right: -20px;
+.gallery-grid img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 #obrazek_godziny {
-    top: 350px;
-    right: 40px;
-    position: absolute;
+    display: block;
+    margin: 20px auto 0;
+    max-width: 100%;
+    height: auto;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 640px;
+    aspect-ratio: 16 / 9;
+    margin: 0 auto;
+}
+
+.video-wrapper iframe {
+    width: 100%;
+    height: 100%;
 }
 
 .map {
-    position: relative;
-    margin-left: auto;
-    width: 640px;
-    margin-right: auto;
     border: 3px solid black;
 }
 
