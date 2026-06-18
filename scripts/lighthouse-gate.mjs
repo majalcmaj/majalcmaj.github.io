@@ -89,14 +89,16 @@ async function runLighthouseScores() {
       const url = `${BASE_URL}/${page}`;
       const result = await lighthouse(url, {
         port: chrome.port,
-        onlyCategories: ['seo'],
+        onlyCategories: ['seo', 'accessibility'],
         output: 'json',
       });
-      const { score } = result.lhr.categories.seo;
-      const pct = Math.round(score * 100);
-      const pass = score >= MIN_SCORE;
-      console.log(`${pass ? 'PASS' : 'FAIL'} ${page}: Lighthouse SEO ${pct}`);
-      if (!pass) failures.push(`${page}: Lighthouse SEO score ${pct} < 95`);
+      for (const categoryId of ['seo', 'accessibility']) {
+        const { score, title } = result.lhr.categories[categoryId];
+        const pct = Math.round(score * 100);
+        const pass = score >= MIN_SCORE;
+        console.log(`${pass ? 'PASS' : 'FAIL'} ${page}: Lighthouse ${title} ${pct}`);
+        if (!pass) failures.push(`${page}: Lighthouse ${title} score ${pct} < 95`);
+      }
     }
   } finally {
     await chrome.kill();
