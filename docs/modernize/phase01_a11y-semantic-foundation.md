@@ -1,7 +1,7 @@
-<!-- plan-status: pending -->
+<!-- plan-status: done; commit=0847a66; date=2026-06-18 -->
 # Phase 01 — a11y-semantic-foundation
 
-> **Status:** ⬜ PENDING
+> **Status:** ✅ DONE — 0847a66 (2026-06-18)
 
 Read `docs/modernize/prompt.md` first.
 
