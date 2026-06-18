@@ -5,12 +5,15 @@
     "test:html": "html-validate *.html",
     "test:a11y": "playwright test tests/a11y.spec.js",
     "test:responsive": "playwright test tests/responsive.spec.js",
-    "test": "npm run test:html && npm run test:a11y && npm run test:responsive"
+    "test:lighthouse": "node scripts/lighthouse-gate.mjs",
+    "test": "npm run test:html && npm run test:a11y && npm run test:responsive && npm run test:lighthouse"
   },
   "devDependencies": {
     "@axe-core/playwright": "^4.10.1",
     "@playwright/test": "^1.49.1",
+    "chrome-launcher": "^1.2.1",
     "html-validate": "^8.27.0",
+    "lighthouse": "^13.4.0",
     "serve": "^14.2.4"
   }
 }

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://stomatologia-ciesielscy.pl/sitemap.xml
