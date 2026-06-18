@@ -1,7 +1,7 @@
-<!-- plan-status: pending -->
+<!-- plan-status: done; commit=9add31d5dac27699f8ee5158a221bac0764bf163; date=2026-06-18 -->
 # phase04 · Job 01 — clinical-calm
 
-> **Status:** ⬜ PENDING
+> **Status:** ✅ DONE — 9add31d5dac27699f8ee5158a221bac0764bf163 (2026-06-18)
 
 Read `docs/modernize/prompt.md` and `docs/modernize/phase04_visual-refresh.md` first. This job runs
 in its **own git worktree** and produces a **complete alternative design** of the whole site. It is

@@ -1,7 +1,7 @@
-<!-- plan-status: pending -->
+<!-- plan-status: done; commit=e12ba20; date=2026-06-18 -->
 # phase04 · Job 02 — fresh-mint
 
-> **Status:** ⬜ PENDING
+> **Status:** ✅ DONE — e12ba20 (2026-06-18)
 
 Read `docs/modernize/prompt.md` and `docs/modernize/phase04_visual-refresh.md` first. This job runs
 in its **own git worktree** and produces a **complete alternative design** of the whole site. It is

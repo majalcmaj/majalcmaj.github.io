@@ -1,7 +1,7 @@
-<!-- plan-status: pending -->
+<!-- plan-status: done; commit=d6dd2b99048590459a28790b44b5f64c6af7bf2f; date=2026-06-18 -->
 # phase04 · Job 03 — warm-sand
 
-> **Status:** ⬜ PENDING
+> **Status:** ✅ DONE — d6dd2b99048590459a28790b44b5f64c6af7bf2f (2026-06-18)
 
 Read `docs/modernize/prompt.md` and `docs/modernize/phase04_visual-refresh.md` first. This job runs
 in its **own git worktree** and produces a **complete alternative design** of the whole site. It is

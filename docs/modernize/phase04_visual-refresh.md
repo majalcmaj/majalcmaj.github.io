@@ -1,7 +1,14 @@
-<!-- plan-status: pending -->
+<!-- plan-status: done; commit=0dbdcbb; date=2026-06-18 -->
 # Phase 04 — visual-refresh (3 competing variants)
 
-> **Status:** ⬜ PENDING
+> **Status:** ✅ DONE — 0dbdcbb (2026-06-18)
+
+> **Deviation from plan:** the plan called for the user to pick exactly one
+> winning variant to merge. Instead the user asked to ship all three side by
+> side for the customer to compare, hosted on GitHub Pages under `/clinical/`,
+> `/fresh/`, `/warm/`. All three are published as self-contained static
+> roots (relative links/assets, no path rewriting needed); the pre-existing
+> root site is untouched.
 
 Read `docs/modernize/prompt.md` first.
 
