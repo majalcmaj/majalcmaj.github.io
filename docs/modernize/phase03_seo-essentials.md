@@ -1,7 +1,7 @@
-<!-- plan-status: pending -->
+<!-- plan-status: done; commit=cf61a62; date=2026-06-18 -->
 # Phase 03 — seo-essentials
 
-> **Status:** ⬜ PENDING
+> **Status:** ✅ DONE — cf61a62 (2026-06-18)
 
 Read `docs/modernize/prompt.md` first.
 
