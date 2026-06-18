@@ -21,7 +21,15 @@ preserved: **no SSG/build step is introduced**, pages stay flat HTML files shipp
   `scrollWidth` overflow) instead of guessing from CSS alone.
 - **Lighthouse CLI** for phase 3's SEO score gate — the standard way to grade SEO objectively.
 - **stylelint-config-standard** for phase 4 — proxies "not ugly/sloppy CSS" with an objective,
-  industry-standard rule set, since "beautiful" itself isn't machine-checkable.
+  industry-standard rule set, since "beautiful" itself isn't machine-checkable. Phase 4 also adds a
+  Lighthouse **Accessibility ≥95** assertion (contrast) to the existing SEO gate.
+- **Phase 4 = a 3-variant design bake-off**, not a single design. "Beautiful/trustworthy" isn't
+  machine-checkable, so instead of guessing one look we build three medical directions
+  (clinical-calm / fresh-mint / warm-sand) in three isolated worktrees and let the user pick. These
+  jobs deliberately break the usual file-disjoint/merge-all job rule: they edit the same files and
+  are mutually exclusive — only the chosen one merges. The objective test gate is identical for all
+  three, so the choice is purely aesthetic. Self-hosted fonts (no Google Fonts CDN) to avoid adding
+  a third-party request alongside the already-flagged GDPR iframe issue.
 - **No SSG (11ty/Astro/etc.)** even though the 6 pages duplicate header/nav/footer markup:
   introducing a build step changes how the site is deployed, and nothing in the repo says how/where
   it's hosted today. Risk of breaking deploy outweighs the dedup win for 6 small files. Duplication
@@ -42,4 +50,4 @@ responsive checks + stylelint. Lighthouse SEO/perf audits (phase 3/4) run via
 | phase01 | a11y-semantic-foundation |
 | phase02 | responsive-layout |
 | phase03 | seo-essentials |
-| phase04 | visual-refresh |
+| phase04 | visual-refresh (3 competing variants → pick one) |

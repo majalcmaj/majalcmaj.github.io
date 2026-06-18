@@ -15,7 +15,15 @@ Phase → file map:
 | phase01 | a11y-semantic-foundation | `docs/modernize/phase01_a11y-semantic-foundation.md` |
 | phase02 | responsive-layout | `docs/modernize/phase02_responsive-layout.md` |
 | phase03 | seo-essentials | `docs/modernize/phase03_seo-essentials.md` |
-| phase04 | visual-refresh | `docs/modernize/phase04_visual-refresh.md` |
+| phase04 | visual-refresh (3 competing variants) | `docs/modernize/phase04_visual-refresh.md` |
+| phase04-job01 | clinical-calm | `docs/modernize/phase04-job01_clinical-calm.md` |
+| phase04-job02 | fresh-mint | `docs/modernize/phase04-job02_fresh-mint.md` |
+| phase04-job03 | warm-sand | `docs/modernize/phase04-job03_warm-sand.md` |
+
+> **Phase 04 is special:** its 3 jobs are *competing* full redesigns of the same files, NOT
+> file-disjoint slices. Do **not** merge them together — set up the shared gate on the phase branch,
+> spawn the 3 design jobs in separate worktrees, then the **user picks one**; only that branch
+> merges. See the phase file's deviation note.
 
 ## 2. The ceremony — red → green → refactor (every phase, no waste)
 - **Red**: write the check / assertion / assumption first and *run it* to prove it is NOT yet
