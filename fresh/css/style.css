@@ -1,0 +1,355 @@
+/* ==========================================================================
+   Fresh Mint / Minimal — design tokens
+   ========================================================================== */
+@font-face {
+    font-family: Manrope;
+    src: url("../fonts/Manrope-Variable.woff2") format("woff2-variations");
+    font-weight: 200 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --color-primary: #2fa98c;
+    --color-primary-dark: #1f7d67;
+    --color-accent: #bfe9dc;
+    --color-surface: #fff;
+    --color-line: #e6ecea;
+    --color-text: #222a2e;
+    --color-text-muted: #5b6a6e;
+    --font-sans: "Manrope", system-ui, sans-serif;
+    --radius: 4px;
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 16px;
+    --space-4: 32px;
+    --space-5: 56px;
+    --space-6: 96px;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    background-color: var(--color-surface);
+    font-family: var(--font-sans);
+    color: var(--color-text);
+}
+
+iframe {
+    border: 0;
+}
+
+a {
+    color: var(--color-primary-dark);
+}
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    background: var(--color-primary-dark);
+    color: #fff;
+    padding: var(--space-2) var(--space-3);
+    z-index: 100;
+}
+
+.skip-link:focus {
+    left: 0;
+}
+
+a:focus-visible,
+button:focus-visible,
+.skip-link:focus-visible {
+    outline: 2px solid var(--color-primary-dark);
+    outline-offset: 2px;
+}
+
+/* ==========================================================================
+   Layout shell
+   ========================================================================== */
+#main_container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    width: 100%;
+    min-height: 100%;
+    background-color: var(--color-surface);
+    position: relative;
+}
+
+#head_container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3);
+    padding: var(--space-4) var(--space-4) var(--space-3);
+    background-color: var(--color-surface);
+    border-bottom: 1px solid var(--color-line);
+}
+
+#main-content {
+    padding: var(--space-5) var(--space-4) var(--space-6);
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+#footer {
+    width: 100%;
+    display: block;
+    padding: var(--space-3) var(--space-4);
+    font-family: var(--font-sans);
+    color: var(--color-text-muted);
+    text-align: center;
+    background-color: var(--color-surface);
+    border-top: 1px solid var(--color-line);
+    font-size: 14px;
+}
+
+/* ==========================================================================
+   Wordmark / logo
+   ========================================================================== */
+#logo {
+    order: 1;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.wordmark {
+    order: 2;
+    display: block;
+    margin: 0;
+    font-family: var(--font-sans);
+    font-weight: 300;
+    font-size: clamp(16px, 4vw, 22px);
+    letter-spacing: 0.02em;
+    color: var(--color-text);
+    max-width: 100%;
+    overflow-wrap: break-word;
+}
+
+.wordmark strong {
+    font-weight: 700;
+    color: var(--color-primary-dark);
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+h1, h2 {
+    font-family: var(--font-sans);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: var(--color-text);
+    text-align: left;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: var(--space-4);
+}
+
+h2 {
+    font-size: 22px;
+    margin-top: var(--space-5);
+    margin-bottom: var(--space-3);
+}
+
+.text-content,
+.oferta,
+.godziny,
+.contact {
+    font-family: var(--font-sans);
+    color: var(--color-text);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.7;
+    text-align: left;
+}
+
+.text-content {
+    color: var(--color-text-muted);
+}
+
+.popup-text {
+    font-size: 17px;
+}
+
+.contact {
+    text-align: center;
+    font-size: 19px;
+    line-height: 1.8;
+}
+
+/* ==========================================================================
+   Navigation — minimal text links, animated mint underline
+   ========================================================================== */
+#head_container nav {
+    order: 3;
+    flex-basis: 100%;
+}
+
+.navigation_bar_list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-4);
+}
+
+.navigation_bar_list li a:link,
+.navigation_bar_list li a:visited {
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    font-family: var(--font-sans);
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--color-text);
+    background-color: transparent;
+    text-align: center;
+    padding: var(--space-2) var(--space-1);
+    text-decoration: none;
+}
+
+.navigation_bar_list li a:link::after,
+.navigation_bar_list li a:visited::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    height: 2px;
+    background-color: var(--color-primary);
+    transition: right 0.2s ease;
+}
+
+.navigation_bar_list li a:hover,
+.navigation_bar_list li a:focus-visible {
+    color: var(--color-primary-dark);
+}
+
+.navigation_bar_list li a:hover::after,
+.navigation_bar_list li a:focus-visible::after {
+    right: 0;
+}
+
+@media (width <= 700px) {
+    .navigation_bar_list {
+        flex-direction: column;
+        gap: var(--space-1);
+        width: 100%;
+    }
+
+    .navigation_bar_list li a:link,
+    .navigation_bar_list li a:visited {
+        width: 100%;
+    }
+}
+
+/* ==========================================================================
+   Misc content elements
+   ========================================================================== */
+.razem {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--color-line);
+    margin: var(--space-5) 0;
+}
+
+ul.oferta,
+ul.godziny {
+    padding-left: var(--space-4);
+}
+
+p.oferta {
+    margin-left: 0;
+}
+
+.gallery-grid {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-4);
+}
+
+.gallery-grid img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+}
+
+#obrazek_godziny {
+    display: block;
+    margin: var(--space-4) auto 0;
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 640px;
+    aspect-ratio: 16 / 9;
+    margin: var(--space-4) auto;
+}
+
+.video-wrapper iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.map {
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius);
+}
+
+.implants-popup {
+    width: 800px;
+    height: 600px;
+}
+
+.offer-video, .popup-video {
+    display: block;
+    margin: 0 auto;
+}
+
+.implants-popup-content {
+    display: block;
+    width: 800px;
+    background-color: var(--color-surface);
+    height: 650px;
+    margin: auto;
+    position: relative;
+    padding: var(--space-3) var(--space-3) 0;
+    border-radius: var(--radius);
+}
