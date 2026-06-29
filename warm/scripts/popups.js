@@ -2,18 +2,8 @@ var LOCALSTORAGE_POPUP_KEY = "implants-popup-seen";
 var LOGO_SPLASH_SESSION_KEY = "logo-splash-seen";
 var IMPLANTS_POPUP_CONTENT = "popups/implants.html";
 
-function makeGalleryPopup(containerElementQuery) {
-    $(containerElementQuery).magnificPopup({
-        delegate: 'a',
-        type: 'image',
-        gallery: {enabled: true},
-        image: {titleSrc: 'title'}
-    });
-}
-
 function savePopupWasOpen() {
     localStorage.setItem(LOCALSTORAGE_POPUP_KEY, "true");
-    return true;
 }
 
 function wasPopupOpen() {
@@ -21,27 +11,30 @@ function wasPopupOpen() {
 }
 
 function openImplantsPopup() {
-    if (!wasPopupOpen()) {
-        $.magnificPopup.open({
-            type: 'ajax',
-            items: {src: IMPLANTS_POPUP_CONTENT},
-            callbacks: {
-                ajaxContentAdded: function () {
-                    var dialog = this.content.attr('tabindex', '-1').get(0);
-                    // Magnific Popup re-focuses .mfp-wrap itself 16ms after open;
-                    // wait it out so our focus call is the one that sticks.
-                    setTimeout(function () {
-                        dialog.focus();
-                    }, 32);
-                },
-                close: savePopupWasOpen
-            }
-        });
-    }
-}
+    if (wasPopupOpen()) return;
 
-function openImplantsPopupOnWindowLoad() {
-    window.onload = openImplantsPopup;
+    fetch(IMPLANTS_POPUP_CONTENT)
+        .then(function (r) { return r.text(); })
+        .then(function (html) {
+            var dlg = document.createElement("dialog");
+            dlg.className = "implants-dialog";
+            dlg.innerHTML = html +
+                '<button class="implants-close" aria-label="Zamknij">&#x2715;</button>';
+            document.body.appendChild(dlg);
+
+            dlg.querySelector(".implants-close").addEventListener("click", function () {
+                dlg.close();
+            });
+            dlg.addEventListener("close", function () {
+                savePopupWasOpen();
+                dlg.remove();
+            });
+            dlg.addEventListener("click", function (e) {
+                if (e.target === dlg) dlg.close();
+            });
+
+            dlg.showModal();
+        });
 }
 
 function createLogoSplash() {
@@ -91,7 +84,6 @@ function createLogoSplash() {
             dismissSplash();
         }
     });
-    // Simple focus trap — only one focusable element in the splash
     splash.addEventListener("keydown", function (e) {
         if (e.key === "Tab") {
             e.preventDefault();
@@ -132,4 +124,5 @@ function initHamburgerMenu() {
 document.addEventListener("DOMContentLoaded", function () {
     initHamburgerMenu();
     createLogoSplash();
+    openImplantsPopup();
 });

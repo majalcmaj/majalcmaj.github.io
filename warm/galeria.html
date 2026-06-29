@@ -14,10 +14,8 @@
     <link rel="preload" href="css/fonts/source-serif-4-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="css/fonts/inter-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <script src="scripts/jquery-3.4.1.min.js"></script>
-    <script src="scripts/jquery.magnific-popup.min.js?v=1.1.0"></script>
-    <script src="scripts/popups.js"></script>
+    <link rel="stylesheet" href="css/photoswipe.css">
+    <script src="scripts/popups.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -41,36 +39,37 @@
     <main id="main-content">
         <br>
         <h1>Galeria zdjęć naszego gabinetu</h1>
-        <ul id="gallery_table" class="gallery-grid parent-container">
-            <li><a href="images/gallery/zdj02.webp" title="Gabinet Stomatologiczny, lek. dent. Ewa Ciesielska podczas pracy.">
+        <ul id="gallery_table" class="gallery-grid">
+            <li><a href="images/gallery/zdj02.webp" data-pswp-width="720" data-pswp-height="480" title="Gabinet Stomatologiczny, lek. dent. Ewa Ciesielska podczas pracy.">
                 <img src="images/gallery/zdj02.webp" alt="Gabinet Stomatologiczny, lek. dent. Ewa Ciesielska podczas pracy." loading="lazy"></a></li>
-            <li><a href="images/gallery/zdj03.webp" title="Gabinet Stomatologiczny, lek. dent. Marek Ciesielski podczas pracy.">
+            <li><a href="images/gallery/zdj03.webp" data-pswp-width="720" data-pswp-height="480" title="Gabinet Stomatologiczny, lek. dent. Marek Ciesielski podczas pracy.">
                 <img src="images/gallery/zdj03.webp" alt="Gabinet Stomatologiczny, lek. dent. Marek Ciesielski podczas pracy." loading="lazy"></a></li>
-            <li><a href="images/gallery/zdj11.webp" title="Gabinet Stomatologiczny">
+            <li><a href="images/gallery/zdj11.webp" data-pswp-width="720" data-pswp-height="480" title="Gabinet Stomatologiczny">
                 <img src="images/gallery/zdj11.webp" alt="Gabinet Stomatologiczny" loading="lazy"></a></li>
-            <li><a href="images/gallery/zdj05.webp" title="Gabinet Stomatologiczny">
+            <li><a href="images/gallery/zdj05.webp" data-pswp-width="720" data-pswp-height="480" title="Gabinet Stomatologiczny">
                 <img src="images/gallery/zdj05.webp" alt="Gabinet Stomatologiczny" loading="lazy"></a></li>
-            <li><a href="images/gallery/zdj13.webp" title="Poczekalnia">
+            <li><a href="images/gallery/zdj13.webp" data-pswp-width="720" data-pswp-height="480" title="Poczekalnia">
                 <img src="images/gallery/zdj13.webp" alt="Poczekalnia" loading="lazy"></a></li>
-            <li><a href="images/gallery/zdj12.webp" title="Nowoczesny aparat Roentgenowski">
+            <li><a href="images/gallery/zdj12.webp" data-pswp-width="480" data-pswp-height="720" title="Nowoczesny aparat Roentgenowski">
                 <img src="images/gallery/zdj12.webp" alt="Nowoczesny aparat Roentgenowski" loading="lazy"></a></li>
-            <li><a href="images/gallery/zdj01.webp" title="Kamienica przy ul. Kajki 2b, wygląd z zewnątrz">
+            <li><a href="images/gallery/zdj01.webp" data-pswp-width="480" data-pswp-height="720" title="Kamienica przy ul. Kajki 2b, wygląd z zewnątrz">
                 <img src="images/gallery/zdj01.webp" alt="Kamienica przy ul. Kajki 2b, wygląd z zewnątrz" loading="lazy"></a></li>
-            <li><a href="images/gallery/zdj06.webp" title="Sterylizatornia">
+            <li><a href="images/gallery/zdj06.webp" data-pswp-width="720" data-pswp-height="480" title="Sterylizatornia">
                 <img src="images/gallery/zdj06.webp" alt="Sterylizatornia" loading="lazy"></a></li>
         </ul>
     </main>
-
     <footer id="footer">
         Gabinet Stomatologiczny Ewa i Marek Ciesielscy ul. Kajki 2b, Lidzbark Warmiński tel. (+48) 89 767 58 18
     </footer>
 </div>
-
-<script>
-    window.onload = function () {
-        makeGalleryPopup('.parent-container');
-        openImplantsPopup();
-    };
+<script type="module">
+    import PhotoSwipeLightbox from './scripts/photoswipe-lightbox.esm.min.js';
+    const lightbox = new PhotoSwipeLightbox({
+        gallery: '#gallery_table',
+        children: 'a[data-pswp-width]',
+        pswpModule: () => import('./scripts/photoswipe.esm.min.js')
+    });
+    lightbox.init();
 </script>
 </body>
 </html>
