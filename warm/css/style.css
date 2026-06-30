@@ -259,7 +259,7 @@ p.oferta {
 
 .gallery-grid {
     list-style-type: none;
-    margin: 0;
+    margin: 0 0 var(--space-5);
     padding: 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -294,11 +294,11 @@ p.oferta {
 
 #obrazek-godziny {
     display: block;
-    margin: var(--space-4) auto 0;
+    margin: var(--space-4) auto var(--space-5);
     max-width: 100%;
     height: auto;
     border-radius: var(--radius);
-    box-shadow: var(--shadow);
+    box-shadow: 0 8px 40px rgb(44 42 38 / 22%), 0 2px 8px rgb(44 42 38 / 10%);
 }
 
 .video-wrapper {
@@ -332,9 +332,12 @@ p.oferta {
     border-radius: var(--radius);
     box-shadow: var(--shadow);
     max-width: min(800px, 95vw);
+    width: 95vw;
     padding: var(--space-4) var(--space-4) var(--space-3);
     background-color: var(--color-surface-alt);
     position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
 .implants-dialog::backdrop {
@@ -404,34 +407,15 @@ p.oferta {
     background: none;
     border: 2px solid var(--color-accent);
     border-radius: var(--radius);
-    padding: 10px 12px;
+    padding: 8px 16px;
     cursor: pointer;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
     order: 1;
     align-self: center;
-}
-
-.nav-toggle-bar {
-    display: block;
-    width: 22px;
-    height: 2px;
-    background-color: #fff;
-    border-radius: 2px;
-    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
-}
-
-#head-container.nav-open .nav-toggle-bar:nth-child(1) {
-    transform: translateY(7px) rotate(45deg);
-}
-
-#head-container.nav-open .nav-toggle-bar:nth-child(2) {
-    opacity: 0;
-}
-
-#head-container.nav-open .nav-toggle-bar:nth-child(3) {
-    transform: translateY(-7px) rotate(-45deg);
+    color: #fff;
+    font-family: var(--font-sans);
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.02em;
 }
 
 @media (width <= 700px) {
@@ -448,9 +432,9 @@ p.oferta {
 
     .nav-toggle {
         order: 2;
-        display: flex;
+        display: block;
         width: 100%;
-        justify-content: center;
+        text-align: center;
     }
 
     #head-container nav {
@@ -469,6 +453,18 @@ p.oferta {
 
     .navigation-bar-list li a:link, .navigation-bar-list li a:visited {
         width: 100%;
+    }
+
+    #footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 200;
+    }
+
+    #main-content {
+        padding-bottom: 80px;
     }
 }
 
@@ -536,10 +532,6 @@ p.oferta {
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .nav-toggle-bar {
-        transition: none;
-    }
-
     #logo-splash.dismissing {
         animation: none;
     }

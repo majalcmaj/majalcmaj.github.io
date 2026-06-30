@@ -37,8 +37,11 @@ function openImplantsPopup() {
         });
 }
 
-function createLogoSplash() {
-    if (sessionStorage.getItem(LOGO_SPLASH_SESSION_KEY) === "true") return;
+function createLogoSplash(onDismissed) {
+    if (sessionStorage.getItem(LOGO_SPLASH_SESSION_KEY) === "true") {
+        if (onDismissed) onDismissed();
+        return;
+    }
 
     var splash = document.createElement("div");
     splash.id = "logo-splash";
@@ -66,9 +69,13 @@ function createLogoSplash() {
         sessionStorage.setItem(LOGO_SPLASH_SESSION_KEY, "true");
         if (reducedMotion) {
             splash.remove();
+            if (onDismissed) onDismissed();
         } else {
             splash.classList.add("dismissing");
-            splash.addEventListener("animationend", function () { splash.remove(); }, {once: true});
+            splash.addEventListener("animationend", function () {
+                splash.remove();
+                if (onDismissed) onDismissed();
+            }, {once: true});
         }
     }
 
@@ -100,10 +107,7 @@ function initHamburgerMenu() {
     toggle.className = "nav-toggle";
     toggle.setAttribute("aria-expanded", "false");
     toggle.setAttribute("aria-label", "Menu nawigacyjne");
-    toggle.innerHTML =
-        '<span class="nav-toggle-bar"></span>' +
-        '<span class="nav-toggle-bar"></span>' +
-        '<span class="nav-toggle-bar"></span>';
+    toggle.textContent = "Menu ▾";
 
     var nav = header.querySelector("nav");
     header.insertBefore(toggle, nav);
@@ -111,6 +115,7 @@ function initHamburgerMenu() {
     toggle.addEventListener("click", function () {
         var isOpen = header.classList.toggle("nav-open");
         toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+        toggle.textContent = isOpen ? "Menu ▴" : "Menu ▾";
     });
 
     document.addEventListener("click", function (e) {
@@ -123,6 +128,5 @@ function initHamburgerMenu() {
 
 document.addEventListener("DOMContentLoaded", function () {
     initHamburgerMenu();
-    createLogoSplash();
-    openImplantsPopup();
+    createLogoSplash(openImplantsPopup);
 });
