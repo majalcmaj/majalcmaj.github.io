@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Galeria — Stomatologia Ciesielscy</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Galeria zdjęć gabinetu stomatologicznego Ewa i Marek Ciesielscy w Lidzbarku Warmińskim.">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://stomatologia-ciesielscy.pl/galeria.html">
+    <meta property="og:title" content="Galeria — Stomatologia Ciesielscy">
+    <meta property="og:description" content="Galeria zdjęć gabinetu stomatologicznego Ewa i Marek Ciesielscy w Lidzbarku Warmińskim.">
+    <meta property="og:type" content="business.business">
+    <meta property="og:url" content="https://stomatologia-ciesielscy.pl/galeria.html">
+    <meta property="og:image" content="https://stomatologia-ciesielscy.pl/images/Logo.png">
+    <link rel="preload" href="css/fonts/source-serif-4-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="css/fonts/inter-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+    <link rel="stylesheet" href="css/photoswipe.css">
+    <script src="scripts/popups.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Przejdź do treści</a>
+<div id="main-container">
+    <header id="head-container">
+        <p class="wordmark">
+            Stomatologia Ciesielscy
+            <span class="wordmark-tagline">Gabinet stomatologiczny od 1992 roku</span>
+        </p>
+        <nav aria-label="Główna nawigacja">
+            <ul class="navigation-bar-list">
+                <li><a href="index.html">O nas</a></li>
+                <li><a href="godziny.html">Godziny przyjęć</a></li>
+                <li><a href="oferta.html">Oferta</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main-content">
+        <br>
+        <h1>Galeria zdjęć naszego gabinetu</h1>
+        <ul id="gallery_table" class="gallery-grid">
+            <li><a href="images/gallery/zdj02.webp" data-pswp-width="720" data-pswp-height="480" title="Gabinet Stomatologiczny, lek. dent. Ewa Ciesielska podczas pracy.">
+                <img src="images/gallery/zdj02.webp" alt="Gabinet Stomatologiczny, lek. dent. Ewa Ciesielska podczas pracy." loading="lazy"></a></li>
+            <li><a href="images/gallery/zdj03.webp" data-pswp-width="720" data-pswp-height="480" title="Gabinet Stomatologiczny, lek. dent. Marek Ciesielski podczas pracy.">
+                <img src="images/gallery/zdj03.webp" alt="Gabinet Stomatologiczny, lek. dent. Marek Ciesielski podczas pracy." loading="lazy"></a></li>
+            <li><a href="images/gallery/zdj11.webp" data-pswp-width="720" data-pswp-height="480" title="Gabinet Stomatologiczny">
+                <img src="images/gallery/zdj11.webp" alt="Gabinet Stomatologiczny" loading="lazy"></a></li>
+            <li><a href="images/gallery/zdj05.webp" data-pswp-width="720" data-pswp-height="480" title="Gabinet Stomatologiczny">
+                <img src="images/gallery/zdj05.webp" alt="Gabinet Stomatologiczny" loading="lazy"></a></li>
+            <li><a href="images/gallery/zdj13.webp" data-pswp-width="720" data-pswp-height="480" title="Poczekalnia">
+                <img src="images/gallery/zdj13.webp" alt="Poczekalnia" loading="lazy"></a></li>
+            <li><a href="images/gallery/zdj12.webp" data-pswp-width="480" data-pswp-height="720" title="Nowoczesny aparat Roentgenowski">
+                <img src="images/gallery/zdj12.webp" alt="Nowoczesny aparat Roentgenowski" loading="lazy"></a></li>
+            <li><a href="images/gallery/zdj01.webp" data-pswp-width="480" data-pswp-height="720" title="Kamienica przy ul. Kajki 2b, wygląd z zewnątrz">
+                <img src="images/gallery/zdj01.webp" alt="Kamienica przy ul. Kajki 2b, wygląd z zewnątrz" loading="lazy"></a></li>
+            <li><a href="images/gallery/zdj06.webp" data-pswp-width="720" data-pswp-height="480" title="Sterylizatornia">
+                <img src="images/gallery/zdj06.webp" alt="Sterylizatornia" loading="lazy"></a></li>
+        </ul>
+    </main>
+    <footer id="footer">
+        Gabinet Stomatologiczny Ewa i Marek Ciesielscy ul. Kajki 2b, Lidzbark Warmiński tel. (+48) 89 767 58 18
+    </footer>
+</div>
+<script type="module">
+    import PhotoSwipeLightbox from './scripts/photoswipe-lightbox.esm.min.js';
+    const lightbox = new PhotoSwipeLightbox({
+        gallery: '#gallery_table',
+        children: 'a[data-pswp-width]',
+        pswpModule: () => import('./scripts/photoswipe.esm.min.js')
+    });
+    lightbox.init();
+</script>
+</body>
+</html>

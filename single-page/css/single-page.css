@@ -1,0 +1,83 @@
+/* single-page overrides */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 110px; /* account for sticky header */
+}
+
+/* sticky header */
+#head-container {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    min-height: 0;
+    padding: var(--space-2) var(--space-4);
+}
+
+/* footer always fixed on all viewports */
+#footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 200;
+}
+
+/* pad content so fixed footer never covers last section */
+#main-content {
+    padding-bottom: 60px;
+}
+
+/* section spacing */
+.page-section {
+    padding-top: var(--space-5);
+    padding-bottom: var(--space-4);
+}
+
+.section-divider {
+    border: none;
+    border-top: 2px solid var(--color-accent);
+    margin: 0 var(--space-5);
+    opacity: 0.4;
+}
+
+/* hamburger: hide on wide */
+.nav-toggle {
+    display: none;
+}
+
+@media (width <= 700px) {
+    html {
+        scroll-padding-top: 80px;
+    }
+
+    #head-container {
+        padding: var(--space-2) var(--space-3);
+    }
+
+    .nav-toggle {
+        display: block;
+        order: 2;
+        width: 100%;
+        text-align: center;
+    }
+
+    #head-container nav {
+        order: 3;
+        flex-basis: 100%;
+    }
+
+    .navigation-bar-list {
+        display: none;
+        flex-direction: column;
+    }
+
+    #head-container.nav-open .navigation-bar-list {
+        display: flex;
+    }
+
+    .navigation-bar-list li a:link,
+    .navigation-bar-list li a:visited {
+        width: 100%;
+    }
+}
